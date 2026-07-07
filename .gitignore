@@ -1,0 +1,26 @@
+# Personal maintainer preferences — not published
+CLAUDE.local.md
+
+# Patient / personal medical data must NEVER be committed (see AGENTS.md guardrails).
+# Keep real cases out of the repo — ship templates and logic only.
+/private/
+/patient-data/
+*.patient.*
+*.phi.*
+
+# Private, real-case evals (retrospective replay) — local only, never published.
+/evals-private/
+
+# Build artifacts (review bundles, zips) — regenerated, not committed.
+/dist/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc

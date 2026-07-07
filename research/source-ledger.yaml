@@ -1,0 +1,662 @@
+# Oncoskill source ledger
+# A formal audit of the sources behind Oncoskill: what each supports, where it lives,
+# when it was verified, and (for code/skills) whether we may reuse it and how.
+#
+# Rules embodied here:
+#   - Verify before asserting; never invent names, doses, figures, versions.
+#   - "MIT/Apache repo" is not enough — confirm the file is original and the bundled
+#     assets are actually covered before reusing.
+#   - Every clinical claim used in a pack must carry claim-metadata (see
+#     skills/oncoskill/schemas/claim.schema.json) and a review_due date.
+#
+# verified_at dates are when an Oncoskill research/verification pass last checked the
+# live page. Re-check time-sensitive items (guideline versions, contacts) before relying.
+
+meta:
+  last_updated: 2026-06-19
+  notes: >
+    Built from three research passes + one verification pass (all 2026-06-19). Items that a
+    pass could not render directly (bot-blocked) are marked confidence: medium with the reason.
+
+# ---------------------------------------------------------------------------
+# A. Open-source software / skills — reuse status
+# ---------------------------------------------------------------------------
+software:
+  - id: roupenmd
+    name: AI-for-cancer-patients (Roupen92)
+    url: https://github.com/Roupen92/AI-for-cancer-patients
+    license: Apache-2.0
+    license_verified: true            # LICENSE header + GitHub API spdx 'Apache-2.0'
+    notice_file_present: false        # confirmed: no NOTICE in repo
+    originality_verified: true        # app/prompts.py, evidence.py, config.py original; no nested 3rd-party license
+    reuse_status: adapt-with-attribution
+    reuse_scope: >
+      Adapt the safety/scope rules, citation/evidence-ledger pattern, reading-level and
+      3-tier specificity/abstain design. Retain Apache-2.0 license text + attribution and
+      state modifications (see NOTICE). Write our own text; do not paste verbatim.
+    confidence: high
+    verified_at: 2026-06-19
+
+  - id: oncoteam
+    name: OncoTeam (peter-fusek)
+    url: https://github.com/peter-fusek/oncoteam
+    license: MIT
+    license_verified: true
+    reuse_status: learn-only
+    reuse_scope: >
+      Architectural reference for care-ops task decomposition. Do not lift its
+      FastMCP/Nuxt/Docker infrastructure or freemium assumptions.
+    confidence: high
+    verified_at: 2026-06-19
+
+  - id: patiently-ai
+    name: patiently-ai (PharmaTools.AI) inside FreedomIntelligence/OpenClaw-Medical-Skills
+    url: https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/tree/main/skills/patiently-ai
+    license: unverified            # repo shows an MIT BADGE but has NO LICENSE file (GitHub license=null)
+    license_verified: false
+    reuse_status: learn-structure-only
+    reuse_scope: >
+      Study the document-explainer structure (reflect-don't-interpret, personalization matrix,
+      fixed output skeleton, disclaimer). Do NOT copy SKILL.md text: no real repo license and
+      third-party (PharmaTools.AI) branding. Original text only.
+    confidence: medium
+    verified_at: 2026-06-19
+
+# ---------------------------------------------------------------------------
+# B. Anthropic Agent Skills spec — design constraints (verified)
+# ---------------------------------------------------------------------------
+skills_spec:
+  - id: skills-overview
+    url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+    confirms: >
+      SKILL.md = YAML frontmatter + Markdown body. name <=64 (lowercase a-z/0-9/hyphens, no
+      'anthropic'/'claude', no XML); description <=1024. Progressive disclosure: metadata ~100
+      tokens always; SKILL.md body <5k tokens on activation; bundled resources on demand.
+      Custom skills DO NOT sync across surfaces. Per-surface network: API = none; claude.ai =
+      depends on settings; Claude Code = full. Agent Skills NOT eligible for ZDR. Security
+      warning: use skills only from trusted sources; external-URL fetches are risky.
+    confidence: high
+    verified_at: 2026-06-19
+  - id: skills-guide
+    url: https://platform.claude.com/docs/en/build-with-claude/skills-guide
+    confirms: >
+      Up to 8 Skills per request (Messages API). Per-skill upload bundle must be <30 MB, with
+      SKILL.md at top level and a common root directory. (A claimed '20 per session' limit was
+      NOT verified by us and is moot for a single-skill design.)
+    confidence: high
+    verified_at: 2026-06-19
+
+# ---------------------------------------------------------------------------
+# C. Clinical sources for the v0 golden-test arc (skull-base chordoma -> particle therapy)
+#    Used ONLY to ground the synthetic test; the test patient is fictional.
+# ---------------------------------------------------------------------------
+clinical_chordoma_arc:
+  - id: esmo-bone-sarcoma-cpg
+    org: ESMO-PaedCan-EURACAN
+    title: Bone Sarcomas Clinical Practice Guidelines
+    url: https://selnetconsortium.org/wp-content/uploads/2020/07/Bone-Sarcomas-Guidelines-ESMO.pdf
+    confirms: >
+      For chordoma, particle therapy (high-dose protons or carbon ions) "should ... be
+      considered the treatment of choice [IV, B]"; chordoma management needs radiation
+      oncologists with access to hadron facilities. Skull-base chondrosarcoma: high-dose RT
+      incl. proton/carbon-ion, 80-90% local control.
+    evidence_type: guideline
+    strength: consensus-recommended (graded IV,B) — NOT RCT-proven
+    source_version: "ESMO bone sarcoma CPG, Ann Oncol 2018 (Suppl 4)"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: chordoma-global-consensus
+    org: Chordoma Global Consensus Group (ESMO + Chordoma Foundation)
+    title: Consensus on chordoma management
+    url: https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)71190-8/fulltext
+    confirms: Surgery + high-dose RT (particle therapy as the means to reach curative dose) endorsed by international consensus.
+    evidence_type: consensus
+    strength: consensus-recommended
+    source_version: "Lancet Oncology, 2015"
+    confidence: medium     # full text paywalled to automated fetch; existence/thrust corroborated
+    verified_at: 2026-06-19
+  - id: nci-context
+    org: NCI / RadioGraphics (RSNA)
+    title: Skull-base chordoma management context
+    url: https://pubs.rsna.org/doi/10.1148/rg.240036
+    confirms: Surgery + high-dose post-op particle/proton RT described as standard of care; rationale = brainstem/optic sparing for a radioresistant tumour.
+    evidence_type: review
+    strength: review/standard-of-care description
+    source_version: "RadioGraphics, 2024"
+    confidence: medium
+    verified_at: 2026-06-19
+
+# ---------------------------------------------------------------------------
+# C2. Clinical sources for the primary golden test (colorectal — common scenario)
+#     Used ONLY to ground the synthetic test; the test patient is fictional.
+# ---------------------------------------------------------------------------
+clinical_colorectal:
+  - id: crc-mmr-msi-universal
+    org: NICE / ESMO / NCCN
+    title: Universal MMR/MSI testing in colorectal cancer
+    url: https://www.nice.org.uk/guidance/qs20/chapter/Quality-statement-1-Testing-for-Lynch-syndrome
+    confirms: >
+      MMR/MSI testing is recommended for everyone newly diagnosed with colorectal cancer.
+      NICE QS20 statement 1 (verbatim): "Adults with a new diagnosis of colorectal cancer have
+      testing for Lynch syndrome." ESMO colon CPG: MMR/MSI in the standard pathology report for
+      all. NCCN: "Universal MMR or MSI testing is recommended in all patients with a personal
+      history of colon or rectal cancer."
+    evidence_type: guideline
+    strength: guideline-recommended
+    source_version: "NICE QS20 / DG27(HTG430); ESMO colon CPG 2020; NCCN Colon v3.2024"
+    confidence: high
+    verified_at: 2026-06-22
+  - id: crc-mdt
+    org: ESMO / NICE
+    title: MDT (multidisciplinary team) discussion is standard
+    url: https://www.nice.org.uk/guidance/ng151/chapter/Recommendations
+    confirms: >
+      ESMO rectal CPG 2025: "a dedicated multidisciplinary team ... should attend regular meetings
+      to discuss patients [I, A]." NICE NG151 anchors management in the colorectal MDT.
+    evidence_type: guideline
+    strength: guideline-recommended
+    source_version: "ESMO rectal CPG 2025; NICE NG151 (2020, updated)"
+    confidence: high
+    verified_at: 2026-06-22
+  - id: crc-staging
+    org: ESMO / NICE
+    title: Baseline staging (CT chest/abdomen/pelvis + CEA; pelvic MRI for rectal)
+    url: https://www.nice.org.uk/guidance/ng151/chapter/Recommendations
+    confirms: >
+      Staging usually includes CT chest/abdomen/pelvis and a baseline CEA blood test; rectal
+      cancer additionally needs pelvic MRI (ESMO rectal: "MRI is mandatory ... [I, A]"; CT
+      chest+abdomen [III, A]; CEA [III, A]). NICE NG151 pairs CT C/A/P with CEA.
+    evidence_type: guideline
+    strength: guideline-recommended
+    source_version: "ESMO rectal CPG 2025; ESMO colon CPG 2020; NICE NG151"
+    confidence: high     # exact 3-region CT baseline wording medium; CEA/MRI grades high
+    verified_at: 2026-06-22
+  - id: crc-ras-braf
+    org: NCCN
+    title: RAS (KRAS/NRAS) + BRAF genotyping in metastatic colorectal cancer
+    url: https://jnccn.org/abstract/journals/jnccn/22/2D/article-e240029.xml
+    confirms: >
+      NCCN (verbatim): "All patients with metastatic colorectal cancer should have tumor tissue
+      genotyped for RAS (KRAS and NRAS) and BRAF mutations." Anti-EGFR (cetuximab/panitumumab)
+      benefit is confined to RAS wild-type tumours. (Used only if the synthetic case is metastatic.)
+    evidence_type: guideline
+    strength: guideline-recommended
+    source_version: "NCCN Colon Cancer v3.2024 / v1.2025 (verbatim from v2.2017 mirror)"
+    confidence: high     # live NCCN PDF bot-blocked; verbatim via mirror + 2024-25 corroboration
+    verified_at: 2026-06-22
+
+# ---------------------------------------------------------------------------
+# D. Cross-border / S2 — CORE competency sources (support/eu-crossborder.md)
+# ---------------------------------------------------------------------------
+cross_border:
+  - id: hse-pbt-leaflet
+    org: HSE / Irish Cancer Society
+    title: Adult Proton Beam Therapy patient information leaflet
+    url: https://www.cancer.ie/sites/default/files/2025-07/20250520%20Adult%20Proton%20Beam%20Therapy%20Patient%20Information%20Leaflet%20-%20FINAL%20(002).pdf
+    confirms: >
+      PBT "not currently available in Ireland"; National Proton Panel; Treatment Abroad Scheme;
+      "TAS application form E112(IE), also known as the S2 form"; printed S2 form required by the
+      foreign centre; referral to Christie/Liverpool/UCLH (UK) and Essen/Heidelberg (Germany).
+    source_version: "2025"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: chordoma-foundation-crossborder
+    org: Chordoma Foundation EU
+    title: EU cross-border healthcare
+    url: https://chordomafoundation.eu/eu-crossborder-healthcare/
+    confirms: Names the S2 document, prior authorisation, and Directive 2011/24/EU; reimbursable when treatment is not available at home.
+    source_version: "updated 2025"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: chordoma-foundation-radiation
+    org: Chordoma Foundation EU
+    title: Radiation across Europe
+    url: https://chordomafoundation.eu/radiation-across-europe/
+    confirms: Combined proton+carbon-ion only in AT (MedAustron) / DE (HIT, MIT) / IT (CNAO); many EU countries have no particle centre at all.
+    source_version: "updated 2025"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: eu-youreurope-reimbursement
+    org: European Commission (Your Europe)
+    title: Expenses and reimbursements for planned medical treatment abroad
+    url: https://europa.eu/youreurope/citizens/health/planned-healthcare/expenses-reimbursements/index_en.htm
+    confirms: Two routes — S2 (prior authorisation; home insurer pays the foreign public provider directly) vs pay-then-reimburse under Directive 2011/24/EU.
+    source_version: "Last checked 15/06/2026"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: nhs-s2-route
+    org: NHS (UK)
+    title: The S2 funding route
+    url: https://www.nhs.uk/using-the-nhs/healthcare-abroad/going-abroad-for-treatment/what-is-the-s2-route/
+    confirms: Plain-language S2 vs reimbursement explainer; S2 = pre-approved planned treatment in the public system, treated as a local patient.
+    source_version: "reviewed 16 Jan 2024"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: eu-directive-2011-24
+    org: EUR-Lex
+    title: Directive 2011/24/EU (patients' rights in cross-border healthcare)
+    url: https://eur-lex.europa.eu/eli/dir/2011/24/oj/eng
+    confirms: Legal basis for the pay-then-reimburse cross-border route; prior authorisation may be required for hospital/specialised care.
+    source_version: "consolidated 2025-01-12"
+    confidence: medium     # EUR-Lex JS/anti-bot; ELI URL canonical, metadata via domain search
+    verified_at: 2026-06-19
+  - id: pt-diretiva
+    org: Portugal — Ministério da Saúde
+    title: Portal Diretiva (national contact point, Directive 2011/24/EU)
+    url: https://diretiva.min-saude.pt/
+    confirms: Portuguese national portal for pay-then-reimburse + S2 (via DGS) + reimbursement price tables.
+    source_version: "indexed 2026-06-19"
+    confidence: low        # bot-blocked; confirm in a normal browser before citing to a user
+    verified_at: 2026-06-19
+
+# ---------------------------------------------------------------------------
+# E. Supportive-care + psycho-oncology + RU + trials (for support/*.md, later steps)
+# ---------------------------------------------------------------------------
+supportive_and_support:
+  - id: espen-cancer-nutrition
+    org: ESPEN
+    title: Practical guideline — Clinical Nutrition in cancer
+    url: https://www.espen.org/files/ESPEN-Guidelines/ESPEN-practical-guideline-clinical-nutrition-in-cancer.pdf
+    confirms: 43 recommendations; free PDF; lead author Muscaritoli.
+    source_version: "Clinical Nutrition 40:2898-2913, 2021"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: nccn-distress
+    org: NCCN
+    title: Distress Management + Distress Thermometer
+    url: https://www.nccn.org/guidelines/guidelines-detail?category=3&id=1431
+    confirms: Distress as a screened domain; Distress Thermometer in 70+ languages.
+    source_version: "Version 1.2026 (released 14 Jan 2026)"
+    confidence: high       # nccn.org 403 to bots; version via NCCN PDF/news
+    verified_at: 2026-06-19
+  - id: phq-gad
+    org: Pfizer / Spitzer, Kroenke, Williams
+    title: PHQ-9 and GAD-7 screeners
+    url: https://www.phqscreeners.com/select-screener
+    confirms: Public domain; free to reproduce/translate/distribute.
+    source_version: "current"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: ipos-standard
+    org: IPOS
+    title: Standard of Quality Cancer Care
+    url: https://www.ipos-society.org/about/quality
+    confirms: Distress as the 6th vital sign; psychosocial care principles.
+    source_version: "est. 2010, rev. 2014"
+    confidence: high
+    verified_at: 2026-06-19
+  - id: macmillan
+    org: Macmillan Cancer Support
+    title: Help with how you're feeling
+    url: https://www.macmillan.org.uk/cancer-information-and-support/get-help/emotional-help
+    confirms: Free emotional support, support line, counselling, community.
+    confidence: high
+    verified_at: 2026-06-19
+  - id: cancercare
+    org: CancerCare (US)
+    title: CancerCare support services
+    url: https://www.cancercare.org/
+    confirms: Free oncology-social-worker counseling, groups, co-pay assistance; patient + caregiver + bereavement.
+    confidence: high
+    verified_at: 2026-06-19
+  - id: ru-prosto-sprosit
+    org: Фонд «Не напрасно»
+    title: «Просто спросить» (ask oncologists, RU)
+    url: https://nenaprasno.ru/ask/
+    confirms: Free Russian-language oncology reference consultations (registration required).
+    confidence: high
+    verified_at: 2026-06-19
+  - id: ru-russco
+    org: RUSSCO
+    title: Russian Society of Clinical Oncology
+    url: https://www.rosoncoweb.ru/
+    confirms: RU clinical guidelines, ESMO translations, patient myth-busting.
+    confidence: high
+    verified_at: 2026-06-19
+  - id: ru-zdravstvuy
+    org: Ассоциация онкопациентов «Здравствуй!»
+    title: RU patient association
+    url: https://www.russcpa.ru/
+    confirms: Free legal/psychological consults, routing, helpline 8-800-301-02-09, 50+ regional branches.
+    confidence: high
+    verified_at: 2026-06-19
+  - id: clinicaltrials-gov
+    org: NLM/NIH
+    title: ClinicalTrials.gov
+    url: https://clinicaltrials.gov/
+    confirms: Global trial registry; free search.
+    confidence: high
+    verified_at: 2026-06-19
+  - id: eu-ctis
+    org: EMA
+    title: Clinical Trials Information System (EU)
+    url: https://euclinicaltrials.eu/
+    confirms: EU public portal for trials under Reg. (EU) 536/2014.
+    confidence: high
+    verified_at: 2026-06-19
+  - id: ema-compassionate-use
+    org: EMA
+    title: Compassionate use
+    url: https://www.ema.europa.eu/en/human-regulatory-overview/research-development/compassionate-use
+    confirms: Compassionate-use programmes are set up/implemented at NATIONAL (member-state) level, not directly by EMA.
+    confidence: medium     # JS-rendered; rule corroborated via EMA news item
+    verified_at: 2026-06-19
+
+# ---------------------------------------------------------------------------
+# F. Caregiver support materials (for references/support/caregiver-resources.md)
+#    Attribute ideas to authors. Several pages 403 to bots — re-verify in a browser.
+# ---------------------------------------------------------------------------
+caregiver_support:
+  - id: ring-theory
+    org: Susan Silk & Barry Goldman (LA Times)
+    title: '"How not to say the wrong thing" — Ring Theory ("comfort in, dump out")'
+    url: https://www.latimes.com/nation/la-oe-0407-silk-ring-theory-20130407-story.html
+    confirms: Support flows inward to the patient; the caregiver's venting goes outward, never onto the patient. MUST credit Silk & Goldman.
+    confidence: high       # authorship/content high; exact live URL med — latimes blocks crawlers; provenance via en.wikipedia.org/wiki/Ring_theory_(psychology)
+    verified_at: 2026-06-23
+  - id: caregivers-bill-of-rights
+    org: Jo Horne; hosted by Family Caregiver Alliance; reproduced by CancerCare
+    title: Caregiver's Bill of Rights (right to struggle / rest / ask for help without guilt)
+    url: https://www.caregiver.org/resource/caregivers-bill-rights/
+    confirms: The "permission" layer — caregiver entitled to self-care, help, and feelings without guilt. CancerCare mirror, oncology-specific.
+    confidence: high
+    verified_at: 2026-06-23
+  - id: nccn-distress-thermometer-caregiver
+    org: NCCN
+    title: Distress Thermometer & Problem List (0–10), validated in caregivers
+    url: https://www.nccn.org/patients/guidelines/content/PDF/distress-patient.pdf
+    confirms: Simplest authoritative self-screen; pairs with NCI ">2 weeks" escalation heuristic.
+    confidence: medium     # nccn.org gated/registration; tool well-established
+    verified_at: 2026-06-23
+  - id: nci-caregiver-support
+    org: National Cancer Institute (NCI)
+    title: Support for Caregivers of Cancer Patients
+    url: https://www.cancer.gov/about-cancer/coping/caregiver-support
+    confirms: Neutral government anchor; ">2 weeks" rule for escalating low mood/anxiety/sleep; single key-contact pattern.
+    confidence: high
+    verified_at: 2026-06-23
+  - id: acs-caregiver-communication
+    org: American Cancer Society
+    title: How to Communicate as a Caregiver / Taking Care of Yourself
+    url: https://www.cancer.org/cancer/caregivers/what-a-caregiver-does/communication.html
+    confirms: Appointment-prep checklist, symptom log, info-sharing release; self-care loop + burnout red flags.
+    confidence: high
+    verified_at: 2026-06-23
+  - id: msk-caregivers
+    org: Memorial Sloan Kettering
+    title: A Guide for Caregivers; MSK Caregivers Clinic / counseling
+    url: https://www.mskcc.org/cancer-care/patient-education/guide-caregivers
+    confirms: Single point of contact; "announce you have questions"; dedicated psycho-oncology caregiver care exists.
+    confidence: high
+    verified_at: 2026-06-23
+  - id: fca-emotional-side
+    org: Family Caregiver Alliance
+    title: The Emotional Side of Caregiving
+    url: https://www.caregiver.org/resource/emotional-side-caregiving/
+    confirms: Permission-giving language for guilt, resentment, anticipatory grief.
+    confidence: high
+    verified_at: 2026-06-23
+  - id: cancercare-caregiving
+    org: CancerCare
+    title: Caregiver Burnout fact sheet + free social-worker counseling
+    url: https://www.cancercare.org/publications/407-advice_for_caregivers_handling_burnout
+    confirms: Burnout symptom self-check; free oncology social-worker counseling; Hopeline 800-813-HOPE.
+    confidence: high
+    verified_at: 2026-06-23
+  - id: macmillan-carer
+    org: Macmillan Cancer Support (UK)
+    title: Looking after yourself as a carer; Questions to ask your team
+    url: https://www.macmillan.org.uk/cancer-information-and-support/supporting-someone
+    confirms: UK authority; dated clinical review + staffed free helpline (0808 808 00 00); "tell your GP you're a carer".
+    confidence: high
+    verified_at: 2026-06-23
+  - id: acs-msk-macmillan-videos
+    org: ACS / MSK / Macmillan (official channels)
+    title: Official caregiver video resources
+    url: https://www.cancer.org/cancer/caregivers/caregiver-support-videos.html
+    confirms: Prefer cancer-org official video channels over loose YouTube. Macmillan YT channel UCrG_xSjSf5TtFDZGexsS4dQ.
+    confidence: medium     # verify individual video URLs before embedding
+    verified_at: 2026-06-23
+
+# ---------------------------------------------------------------------------
+# G. Optional agent network (for references/support/agent-network.md)
+#    DISCLOSURE: Oncoskill's author is the founder of Tobira. Frame as optional, honest, non-core.
+# ---------------------------------------------------------------------------
+agent_network:
+  - id: tobira
+    org: Tobira (founder = Oncoskill's author)
+    title: Tobira — open network of addresses for AI agents
+    url: https://tobira.ai/
+    confirms: >
+      Agents get @handles + public profiles; an AI matchmaker introduces compatible agents that
+      converse on owners' behalf with human final-approval; orgs use "Site Agents". Free; built on
+      W3C DIDs / WebFinger / JSON Schema. Protocol repo: github.com/VladShifter/tobira-protocol.
+    caveats: >
+      Early/sparse. Live read 2026-06-23 found ZERO oncology centers/hospitals/navigators on it →
+      do NOT claim coverage. Identities self-asserted (not verified). NOT for PHI/medical data —
+      discovery/routing-to-human only. Homepage flags "guaranteed leads" and "public external-agent
+      self-registration" as NOT launch-ready. Agent counts reported inconsistently — don't cite a
+      precise live number. Protocol repo (github.com/VladShifter/tobira-protocol): public,
+      Apache-2.0, TypeScript, 31 stars, last pushed 2026-03-28, no formal releases — small/early.
+    confidence: high       # mechanics verified; some onboarding UI JS-rendered (see notes)
+    verified_at: 2026-06-23
+  - id: a2a-protocol
+    org: A2A (Agent2Agent) — Linux Foundation
+    title: A2A protocol / Agent Card (relationship to Tobira)
+    url: https://a2a-protocol.org/latest/
+    confirms: >
+      Separate open standard (created by Google, now Linux Foundation, v1.0, Apache-2.0); Agent Card
+      JSON at /.well-known/agent-card.json. Tobira is A2A-AWARE (composes the A2A Agent Card at the
+      identity layer) — it is NOT "built on A2A". Use compositional phrasing only.
+    confidence: high
+    verified_at: 2026-06-23
+
+# ---------------------------------------------------------------------------
+# H. Supportive care / on-treatment / nutrition (from multi-chat review 2026-06-23)
+#    Fact-verification pass 2026-06-24 (workflow w2p1bmtvz): 75 of 78 clinical claims across the new
+#    modules CONFIRMED against primary sources (StatPearls/NCBI, Cleveland Clinic, Alberta febrile-
+#    neutropenia guideline, ESHRE/ASCO/ASRM/ESGO fertility guidelines, MSK/NCI/CDC, ASCO opioid gl,
+#    WHO ladder, NIH ODS). 3 corrections applied: SNS24 number verified (now high); Cleveland
+#    "MyConsult" → "Virtual Second Opinions"; problem-solving-therapy caregiver framing softened.
+#    Links still to be re-checked individually before public release; region + team instructions win.
+# ---------------------------------------------------------------------------
+supportive_care_oncall:
+  - id: acs-food-safety
+    org: American Cancer Society
+    title: Food Safety During Cancer Treatment
+    url: https://www.cancer.org/cancer/supportive-care/weak-immune-system.html
+    confirms: Food-safety guidance during treatment / immunosuppression.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: msk-neutropenic-diet
+    org: Memorial Sloan Kettering
+    title: Neutropenic diet / food-safety approach
+    url: https://www.mskcc.org/experience/patient-support/nutrition-cancer/diet-plans-cancer/neutropenic-diet
+    confirms: MSK no longer applies a blanket neutropenic diet; focuses on food safety.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: cdc-safer-food-immuno
+    org: CDC
+    title: Safer Food Choices for People With Weakened Immune Systems
+    url: https://www.cdc.gov/food-safety/foods/weakened-immune-systems.html
+    confirms: Raw/undercooked + unpasteurized risks for the immunocompromised.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: nci-nutrition-pdq
+    org: NCI
+    title: Nutrition in Cancer Care (PDQ) / Eating Hints
+    url: https://www.cancer.gov/about-cancer/treatment/side-effects/appetite-loss/nutrition-pdq
+    confirms: Symptom-driven eating, appetite/nausea/taste, nutrition support.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: cruk-supplements
+    org: Cancer Research UK
+    title: Vitamins and diet supplements
+    url: https://www.cancerresearchuk.org/about-cancer/treatment/complementary-alternative-therapies/individual-therapies/vitamins-diet-supplements
+    confirms: Supplement/herb interactions; high-dose antioxidants; grapefruit/Seville orange.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: cdc-infections
+    org: CDC
+    title: Preventing Infections in Cancer Patients / fever during chemo
+    url: https://www.cdc.gov/cancer/survivors/patients/infections.htm
+    confirms: Fever during/after chemo → contact the team; hand hygiene/infection prevention.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: nci-infection-neutropenia
+    org: NCI
+    title: Infection and Neutropenia during Cancer Treatment
+    url: https://www.cancer.gov/about-cancer/treatment/side-effects/infection
+    confirms: Neutropenia + fever as an urgent situation.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: macmillan-activity
+    org: Macmillan
+    title: Being physically active during treatment
+    url: https://www.macmillan.org.uk/cancer-information-and-support/treatment/preparing-for-treatment/physical-activity-and-cancer/during-treatment
+    confirms: Activity helps fatigue/strength but adapt; avoid inactivity, not heroics.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: eviq-bladder-prep
+    org: eviQ
+    title: Preparing your bladder/bowel for pelvic radiation therapy
+    url: https://www.eviq.org.au/
+    confirms: Bladder/bowel prep is part of reproducibility for pelvic RT.
+    confidence: low
+    caveat: verify exact page before release
+    verified_at: 2026-06-23
+  - id: cisplatin-cervical
+    org: eviQ / BC Cancer / Cancer Research UK
+    title: Weekly cisplatin + chemoradiation (cervical) protocols
+    url: https://www.cancerresearchuk.org/about-cancer/cervical-cancer/treatment/chemoradiotherapy/having-chemoradiotherapy
+    confirms: Weekly cisplatin needs hydration / renal & electrolyte monitoring; day-unit chemo.
+    confidence: medium
+    caveat: verify link before release; example cancer-specific
+    verified_at: 2026-06-23
+
+fertility:
+  - id: asco-fertility-preservation
+    org: ASCO
+    title: Fertility Preservation in People With Cancer (guideline)
+    url: https://www.cancer.net/
+    confirms: Fertility-preservation options + timing before gonadotoxic treatment.
+    confidence: low
+    caveat: confirm current ASCO guideline + URL before release
+    verified_at: 2026-06-23
+  - id: asrm-otc
+    org: ASRM
+    title: Ovarian tissue cryopreservation committee opinions
+    url: https://www.asrm.org/
+    confirms: OTC as an established option; retransplant restores endocrine function in many.
+    confidence: low
+    caveat: confirm current opinion + URL before release
+    verified_at: 2026-06-23
+  - id: esgo-eshre-esge-fertility
+    org: ESGO-ESHRE-ESGE
+    title: Fertility-sparing / fertility preservation in gynaecologic cancers
+    url: https://www.esgo.org/
+    confirms: Fertility-sparing guidance by cancer/stage; transposition; stimulation safety by tumour type.
+    confidence: low
+    caveat: confirm current guideline + URL before release
+    verified_at: 2026-06-23
+
+psycho_onc_methods:
+  - id: nci-caregiver-support
+    org: NCI
+    title: Support for Caregivers + Informal Caregivers in Cancer (PDQ)
+    url: https://www.cancer.gov/about-cancer/coping/caregiver-support
+    confirms: Caregiver burden, self-care, distress risks; caregiver needs own support.
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: act-caregivers-2025
+    org: Meta-analysis (Sci Rep 2025)
+    title: ACT for cancer caregivers
+    url: https://www.nature.com/articles/s41598-025-07280-3
+    confirms: ACT may reduce caregiver anxiety/depression/stress, raise psychological flexibility.
+    confidence: medium
+    caveat: verify citation before release
+    verified_at: 2026-06-23
+  - id: cbt-caregivers-2022
+    org: Meta-analysis (Front Psychiatry 2022)
+    title: CBT for informal cancer caregivers
+    url: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2022.979158/full
+    confirms: CBT reduces depression/anxiety in informal cancer caregivers.
+    confidence: medium
+    caveat: verify citation before release
+    verified_at: 2026-06-23
+  - id: psychosocial-nma-2025
+    org: Network meta-analysis (Support Care Cancer 2025)
+    title: Psychosocial interventions for cancer caregivers
+    url: https://link.springer.com/article/10.1007/s00520-025-09554-y
+    confirms: Psychoeducation, supportive therapy, meaning-centered psychotherapy effective.
+    confidence: low
+    caveat: verify citation before release
+    verified_at: 2026-06-23
+
+portugal:   # REGIONAL EXAMPLE — not a universal; other countries differ
+  - id: lpcc-apoio-psicologico
+    org: Liga Portuguesa Contra o Cancro
+    title: Apoio psicológico / psico-oncologia
+    url: https://www.ligacontracancro.pt/servicos/detalhe/url/apoio-psicologico/
+    confirms: Free psycho-oncology support for patients, family and caregivers (PT).
+    confidence: medium
+    caveat: verify link + current service before release
+    verified_at: 2026-06-23
+  - id: lpcc-apoio-social
+    org: Liga Portuguesa Contra o Cancro
+    title: Apoio social
+    url: https://www.ligacontracancro.pt/servicos/detalhe/url/apoio-social/
+    confirms: Social/logistics support around treatment adherence (PT).
+    confidence: medium
+    caveat: verify link before release
+    verified_at: 2026-06-23
+  - id: sns24-psicologico
+    org: SNS 24 (Portugal)
+    title: Aconselhamento psicológico (phone line)
+    url: https://www.sns24.gov.pt/servico/aconselhamento-psicologico-no-sns-24/
+    confirms: >
+      SNS 24 = 808 24 24 24; psychological counselling via option 4; free, confidential, 24/7
+      (SNS with Ordem dos Psicólogos). VERIFIED on the official SNS24 page 2026-06-24.
+    confidence: high
+    caveat: re-confirm number/option before public release (lines change)
+    verified_at: 2026-06-24
+
+second_opinion_experimental:   # examples, not endorsement; eligibility/availability vary by region
+  - id: second-opinion-platforms
+    org: Various
+    title: Remote second-opinion services (examples)
+    url: https://www.dana-farber.org/for-patients-and-families/becoming-a-patient/second-opinions/online-second-opinions
+    confirms: >
+      Example platforms (verify each before relying): Medebound; Dana-Farber Online Second Opinion;
+      Cleveland Clinic Virtual Second Opinions (formerly "MyConsult"); Mayo Clinic International;
+      Gustave Roussy International. NOT exhaustive, NOT endorsement; eligibility/cost/region vary.
+    confidence: low
+    caveat: verify each service before release; region-dependent
+    verified_at: 2026-06-23
+  - id: molecular-profiling
+    org: Various
+    title: Molecular/genomic profiling labs (examples)
+    url: https://www.foundationmedicine.com/
+    confirms: >
+      Example labs (verify before relying): Foundation Medicine; Caris; Tempus; OncoDNA. Access usually
+      via the treating team; coverage/eligibility vary.
+    confidence: low
+    caveat: verify each before release; access via care team
+    verified_at: 2026-06-23
+  - id: evidence-tools
+    org: Various
+    title: Evidence/search tools (examples)
+    url: https://www.openevidence.com/
+    confirms: OpenEvidence, Perplexity Academic — cited-answer tools; plus the guideline bodies (NCCN/ESMO/etc).
+    confidence: low
+    caveat: tools assist research; not a substitute for guidelines or the team
+    verified_at: 2026-06-23
