@@ -15,13 +15,13 @@ Boundaries: `../../POLICY.md`.)
 - Talk like a person, not a leaflet. Lead with what matters for *their* situation, not a generic diet
   lecture. Answer the actual question ("can she have yogurt?") before any caveats.
 - Evidence honesty (`../../POLICY.md` §2): "guidelines suggest…", not "this cures/causes". Cite or use a
-  dated bundled fact (sources audited in the project repo — incl. ESPEN cancer nutrition, NCI Nutrition PDQ, ACS/MSK
-  food-safety, MASCC, ASCO/NCCN supportive care).
+  dated bundled fact. The checked food-safety and supplement sources are in
+  `../support/verified-sources.md`; those notes do not verify every clinical suggestion in this file.
 
 ## Malnutrition first — this is the real risk
 
-Under-eating is far more common and far more dangerous than most of the "diet" worries people bring.
-Before anything else, keep this central:
+Under-eating and unintended weight loss deserve attention alongside infection precautions. Do not
+rank their risk against infection for an individual without assessment. Keep this central:
 
 - **Weight loss / low intake** is the biggest practical risk. Unintended weight loss is something to
   raise with the team *early*, not after it adds up — it can affect whether treatment goes ahead on
@@ -49,7 +49,7 @@ guessing.
 ## Food safety, practically (when immunity is low)
 
 When someone is immunosuppressed, the aim is to lower the load of bugs in food without turning eating
-into a project. The general principles (confirm against the team's own diet sheet; sources audited in the project repo):
+into a project. These examples draw on MSK patient guidance checked 2026-09-07; confirm any transplant-specific or other individual diet sheet (`../support/verified-sources.md`):
 
 - **Cooked and freshly prepared is usually safer** than raw or long-sitting leftovers. Hot food hot,
   cold food cold; don't leave cooked food at room temperature for hours.
@@ -57,11 +57,10 @@ into a project. The general principles (confirm against the team's own diet shee
   eggs, raw-egg dressings) and **unpasteurized** milk, cheese, and juice while immunity is low.
 - **Wash fruit and vegetables** well; peel where easy. Salad bars, buffets, and fresh-squeezed juice
   from a public machine are higher-risk because of handling and standing time.
-- **Live-culture / fermented foods and probiotic supplements** (live yogurt, kefir, kombucha,
-  sauerkraut, probiotic capsules) are **often restricted when someone is very immunosuppressed** —
-  because they're deliberately full of live organisms. This is genuinely the **team's call** and
-  depends on counts and the specific protocol; flag it, don't rule for them. Plain *pasteurized* yogurt
-  is a different thing and is usually fine.
+- **Yogurt and probiotic supplements are different.** MSK allows commercially pasteurized yogurt,
+  including yogurt with live cultures. Do not equate live cultures with unpasteurized milk or ban all
+  fermented food. A probiotic capsule or supplement needs a separate pharmacist/team check; specific
+  transplant or other treatment instructions may differ.
 
 ## "Can she eat / drink X?" — answer it, don't lecture
 
@@ -70,13 +69,12 @@ practical answer. Almost always the real questions are: **is it pasteurized, was
 stored — and is she neutropenic right now?** Walk through those, then say where it lands and offer a
 safer version. A couple of worked examples (illustrative, not rules):
 
-- **"Berries?"** — Fine when immunity is normal. When neutropenic, raw berries are hard to wash fully
-  (all those crevices), so many teams prefer them cooked (compote, stewed) or swapped for a
-  thicker-skinned, peelable fruit. So: rinse well and check with the team, or cook them — don't ban
-  fruit outright.
-- **"Yogurt?"** — Plain *pasteurized* yogurt is usually fine and a good easy-protein option. The thing
-  to check is **live-culture / probiotic** yogurt when very immunosuppressed (see above). Cold and
-  sealed until eaten.
+- **"Berries?"** — Check washing, freshness, handling, and any individual diet instruction. Do not
+  impose a blanket raw-berry ban because it is chemotherapy day. Cooked fruit is an option if preferred
+  or specifically advised, not a universal requirement.
+- **"Yogurt?"** — Check that it is commercially made from pasteurized milk and stored properly.
+  Live cultures alone are not a reason to reject it; distinguish it from a probiotic supplement.
+
 - **"A slice of pizza?"** — Freshly made and hot is generally fine; the issue is a slice that's been
   sitting out, or raw/cured toppings. Reheat it hot, skip the raw rocket-on-top.
 - **"Juice?"** — Pasteurized carton juice is fine; **fresh-squeezed from a machine or stall** is the
@@ -94,8 +92,8 @@ A small bag that makes the infusion chair easier and avoids the riskier grab-opt
 - A **cold pasteurized yogurt** in a small cool-bag; a plain, freshly made sandwich (avoid deli-counter
   cured meats / soft unpasteurized cheese if immunity is low).
 - Ginger sweets / mints for nausea; a refillable bottle.
-- **Skip on chemo day** (when immunity may be dropping): raw berries, sushi/sashimi, fresh-machine or
-  stall juice, salad-bar / buffet food, soft-serve ice cream.
+- Apply the same food-handling precautions on infusion day as on other days; do not assume immunity
+  drops immediately or introduce extra bans just because chemotherapy happens today.
 
 ## When a symptom is in the way
 
@@ -127,22 +125,12 @@ after anaesthesia and opioids — fluids and gentle movement help. Detail on the
 
 ## "Immune-boosting" supplements — reframe, don't sell
 
-There's no supplement that "boosts immunity" against cancer during treatment, and some can actively
-interfere. So, calmly:
-
-- **Don't add immune-boosting / antioxidant supplements during treatment to "help fight it."** Frame
-  real immune support as the unglamorous stuff that actually works: **good nutrition, sleep, hydration,
-  infection prevention** (hand-washing, food safety, avoiding sick contacts), and **asking the team
-  about vaccinations** that are appropriate during treatment.
-- **High-dose antioxidants** (mega-dose vitamin C/E and similar) can theoretically blunt how some
-  chemo/radiation works — this is genuinely a "check with your oncology team/pharmacist before taking"
-  item, not a free choice.
-- **Herbals and a few common foods interact with cancer drugs** — flag the classic ones to clear with
-  the **pharmacist or team first**: **grapefruit / grapefruit juice**, **St John's wort**, and
-  high-dose herbal/botanical supplements generally. Per `../../POLICY.md` (and A7): explain and flag the
-  interaction and route it to the pharmacist/team — never green-light combining a supplement with
-  treatment, and never compute a dose.
-- The **pharmacist is a fast, free, underused** first stop for "is this supplement OK with her chemo?"
+Do not recommend a diet or supplement as a way to fight cancer or compensate for poor intake without
+clinical review. Some supplements can affect treatment. Ask what is already being taken, including
+herbal products and vitamins, and help send the exact product and prescribed regimen to a pharmacist
+or the oncology team. Do not infer an interaction from the word "antioxidant" alone or green-light a
+combination. General source: NCI, *Popular Diets, Supplements, and Cancer*, posted 2024-10-30, checked
+2026-09-07 (`../support/verified-sources.md`).
 
 ## Don't be the source of extra restrictions
 

@@ -1,7 +1,7 @@
 # Core: privacy & safe sharing — strip, consent, link, then send
 
 How to help someone share medical material safely: what to take out before it leaves their hands, who
-is allowed to share what, and how to send it so it can't leak forever. Draft-only — the agent prepares
+is allowed to share what, and how to limit further access after sharing. Draft-only — the agent prepares
 and checks; the person sends. (Binding rules: `../../POLICY.md` §3. Intake-note text: `../../SKILL.md` §6.)
 
 *Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `adapt-to-context.md`).*
@@ -9,12 +9,13 @@ and checks; the person sends. (Binding rules: `../../POLICY.md` §3. Intake-note
 The quiet truth worth saying once: **the responsibility for what gets shared, and with whom, rests
 with the person whose data it is.** No portal, no "secure link", and no helper removes that. So the
 move is calm and deliberate — share exactly what answers the question, to exactly the person who needs
-it, in a form that can't quietly travel further. Not paranoia; just keeping control of your own file.
+it, with access controls where available and an honest account of their limits. Not paranoia; just keeping control of your own file.
 
 ## A few ground rules first
 
-- **Agent Skills are not ZDR-eligible.** Show the intake note (`../../SKILL.md` §6) before the person shares
-  any document, so they're choosing knowingly.
+- **Storage depends on the host and its settings.** The skill provides no special protection.
+  Show the intake note (`../../SKILL.md` §6) before document sharing; do not make unverified promises
+  about retention, training use, or who has access.
 - **No real patient data lives in this repo or in examples** — only de-identified, synthetic composites.
 - **Draft-only.** The agent never sends, uploads, or posts anything externally. It prepares a clean
   copy and a checklist; the person reviews and shares.
@@ -33,10 +34,14 @@ goal isn't to scrub everything — a doctor often *needs* the name and date of b
 - **Remove what doesn't belong to the clinical question:** home address, phone, email, national health
   / insurance / tax / passport numbers, employer, next-of-kin details — unless that specific recipient
   genuinely needs one of them (e.g. an insurer needs the policy number; a clinician usually doesn't).
-- **Strip the invisible layer on scans and photos:** file metadata (camera, GPS, author, edit history),
-  and any **QR codes, barcodes, or DataMatrix** on a report — those can resolve to a full hospital
-  record or portal. A QR pointing at the live chart leaks far more than the page it sits on. Prefer a
-  flattened image or a re-exported PDF over the raw phone photo.
+- **Actually redact identifiers and QR/barcodes where they are not needed.** A visible code can
+  remain readable after flattening or re-exporting a PDF. Use true redaction that removes the content,
+  not a black rectangle layered over it; remove hidden text/OCR under the redacted area, metadata,
+  embedded files, and comments that contain identifiers. Preserve clinical content and the original
+  privately. Reopen the output: visually inspect each redaction and check search/copy/text extraction
+  and metadata. Do not claim it is redacted if you only supplied instructions or cannot inspect it.
+  For DICOM, use the recipient's accepted de-identification process; PDF redaction is not sufficient.
+
 - **Clean the document body itself:** other people's data that rode along (a shared lab batch, a ward
   list, a family member named in a note), a clinic's internal routing stamps, and account/portal IDs in
   headers and footers.
@@ -54,18 +59,19 @@ country. The principle is constant: keep what identifies the case to *this* reci
 A natural way to offer this:
 > "Before this goes to the second-opinion clinic, let's tidy it so it only carries what they need. I'd
 > keep your name and date of birth since they'll match it to your records, but take out your home
-> address and the insurance number — they don't need those. There's also a QR code on page 2 that
-> likely links back to your hospital portal; I'd flatten that page so it can't be scanned. And your
+> address and any insurance number this clinic doesn't need. There's also a QR code on page 2;
+> I'd remove the code itself and verify the saved copy, because flattening won't make it unreadable. And your
 > note at the bottom — 'maybe it spread?' — I'd remove that; it's a worry, not a finding, and it can
 > muddy how they read the rest. Want me to mark up exactly what to strip?"
 
-## Send it so it can't travel forever — links, expiry, revocation
+## Limit future access — links, expiry, revocation
 
 How a packet is *delivered* matters as much as what's in it.
 
 - **Prefer a read-only, expiring, revocable link over an open attachment** when the platform allows it:
-  view-only (no download/forward), an expiry date, and access you can revoke later. A file emailed out
-  is a file you can never pull back.
+  restricted to the intended recipient, with an expiry date and revocable access. These controls
+  cannot prevent screenshots, copying, or forwarding a copy already obtained. Revocation stops future
+  access through that link; it does not retrieve copies.
 - **One known recipient per link** beats a single link passed around. If two clinics need it, that's
   two links you can expire independently.
 - **A view-only link can be blocked** by a hospital's security or simply ignored — so when a clinician

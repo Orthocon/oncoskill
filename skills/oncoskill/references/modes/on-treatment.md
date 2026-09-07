@@ -20,13 +20,16 @@ sense of **where in the cycle they are**:
   during/just after infusion.
 - **Between radiotherapy fractions** — cumulative skin, fatigue, gut/bladder effects that build over
   weeks; is it the expected curve or something new?
-- **Post-chemo days ~1–5 (the nadir window)** — counts dip, infection risk peaks; this is when a fever
-  is never "just a bug."
+- **Days after chemotherapy** — the low-count period varies with the regimen and the person.
+  Ask when the team expects it; do not infer the counts from the day number. Fever or feeling suddenly
+  unwell needs prompt contact on any treatment day, not only during an assumed nadir window.
 - **The weekend / out-of-hours** — clinic closed, people wait when they shouldn't; know the out-of-hours
   number *before* it's needed.
 - **End of a course / between courses** — recovery, and prepping for the next milestone.
 
-Start with whatever they've told you and fill in the rest as you go.
+Start with whatever they've told you and fill in the rest as you go. **Urgent symptoms come first:**
+do not delay escalation while collecting cycle details. Source: NCI infection guidance, checked
+2026-09-07; scope and review dates in `../support/verified-sources.md` (infection).
 
 ## The quick check (and offer to record it)
 
@@ -90,30 +93,19 @@ question below).
 
 ## Anemia as an operational blocker
 
-Low haemoglobin is one of those things that quietly derails treatment and then gets dropped between
-departments — worth flagging clearly, as a question for the team. The useful distinction:
+If the report identifies anemia or the team has raised it, help clarify the cause and the plan before
+the next milestone. Anemia has several possible causes; a single iron result does not establish why
+it is happening or which treatment is appropriate. Do not attribute new breathlessness or fainting
+to anemia without clinical assessment; follow the urgent-symptom route above.
 
-- **Haemoglobin (Hb)** is the oxygen-carrying capacity *right now* — it's what's making someone
-  breathless, exhausted, or not fit to start a round.
-- **Iron stores** are a separate axis: **ferritin** (the store) and especially **TSAT** (transferrin
-  saturation — how much usable iron is actually in transit). They can be depleted even when Hb hasn't
-  fully bottomed out, and they explain *why* the anemia isn't correcting.
+Useful questions: *"What is causing the anemia? Do the blood count and any iron studies need further
+review? Is anything needed before the next treatment, who will arrange it, and when will it be
+rechecked?"* If the user has TSAT or ferritin results, preserve the value, unit, range, and date and
+ask how the team interprets them together. Do not infer poor gut absorption from low TSAT, select
+oral versus IV iron, or set a target Hb/transfusion threshold.
 
-Why this matters operationally: at **very low TSAT, the gut often can't absorb enough oral iron to keep
-up** — so tablets don't fix it, and **IV iron is frequently what's needed instead**. Whether to use it,
-and what to target, is a medical decision, but it's the kind of fork that gets missed if no one asks.
-
-Two more things worth raising as questions, not instructions:
-
-- **A target Hb before chemoradiation** is a recognised, guideline-level question — anemia can affect
-  how well radiotherapy works, so *"is there an Hb level you'd want me at before we start, and how do
-  we get there in time?"* is a fair thing to ask.
-- **Correction can sometimes be arranged privately or faster** if the public pathway is slow and a
-  window is closing — surface it as an option to explore, not a push (`../support/financial-insurance.md`,
-  `next-action.md`).
-
-The point isn't to diagnose or dose anything — it's to make sure anemia is *seen as a fork in the road*
-and put to the team before the next milestone, instead of silently slowing everything down.
+Source: American Cancer Society, *Anemia in People with Cancer*, checked 2026-09-07; the source note
+in `../support/verified-sources.md` supports cause-dependent assessment, not a personal iron plan.
 
 ## Treatment-readiness check
 
@@ -152,7 +144,7 @@ self-treatment.
 
 ## Where this hands off
 
-- Medicines, doses-from-the-package, interactions, pain and opioids → `medications.md` (and the
+- Medicines, package strength vs prescribed dose, interactions, pain and opioids → `medications.md` (and the
   pharmacist is a fast, free first stop).
 - Eating through treatment, the chemo-day kit, food safety when immunosuppressed, symptom-based food
   → `nutrition.md`.

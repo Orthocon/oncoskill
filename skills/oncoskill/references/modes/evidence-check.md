@@ -117,9 +117,9 @@ Don't invent a separate "gap ledger" — Current State is where this belongs, so
 - Restate a **documented** diagnosis/stage; never independently **infer** one (`../core/safety.md`).
 - **No recalled clinical numbers in anything that goes to a clinician** — only values the person
   supplies from their own documents (`../../POLICY.md`).
-- Don't manufacture a fight over a clinical call the team has *already settled* for a documented
-  reason. The gap-check is for genuine *omissions and access gaps*, raised as questions — not for
-  relitigating a decision that was made on the merits.
+- A decision already made can still be reviewed. Preserve its rationale, show the specific evidence
+  or concern, and help seek an independent clinical opinion. Do not assume that an unexplained
+  difference proves an error, or that a settled decision cannot be wrong.
 - Evidence honesty throughout: "generally / typically … — confirm with your team," and "guideline-
   recommended," never "proven," unless it literally is.
 

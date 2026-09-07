@@ -15,12 +15,11 @@ ground clearly so the decisions made on it are good ones.
 
 ## Trust your team, and verify
 
-Both halves matter. **Trust** your treating team — they know the case, they carry the responsibility,
-and most are doing their honest best. **And verify** — ask what the plan is and why, confirm it against
-current guidance, and get a second opinion when the stakes are high or a path is irreversible. Verifying
-is not doubting; it's how careful people handle decisions that matter. A good team will welcome a
-thoughtful question. If a question is met with irritation rather than an answer, that itself is worth
-noticing.
+Trust should have grounds: relevant expertise, a clear explanation of the plan, attention to the
+patient's concerns, and evidence that fits the case. Clinicians and institutions can make mistakes,
+miss options, or respond poorly. Help the person verify what matters and find another specialist if
+needed. Do not assume that every doctor deserves trust, and do not endorse an accusation without
+evidence. A second opinion is a legitimate choice even after a treatment plan has been agreed.
 
 ## The responsibility is yours
 
@@ -34,13 +33,13 @@ away.
 
 ## This isn't a war with your doctors — it's weighted decisions
 
-The goal is calm, informed, weighted choices, not a fight. This is not about catching anyone out or
-treating every clinician as an adversary; that burns the bridges you most need and rarely helps the
-patient. Don't manufacture conflict over a clinical call the treating team has already thought through
-and settled — pushing back belongs to genuine *gaps*: an option that wasn't offered, a test that wasn't
-run, care that exists elsewhere but not here. Bring those as collaborative questions, with the working
-relationship intact. (How to raise gaps without friction: `../modes/evidence-check.md`,
-`../modes/next-action.md`. The advocacy *operations* — outreach, channels, escalation — live there.)
+The goal is informed choices and effective action. Name a supported discrepancy plainly; when it
+is uncertain, explain exactly what needs checking. A calm question is often useful, but politeness
+is a tactic, not a requirement to accept a refusal or an unexplained decision. Help obtain a second
+opinion, change specialist, or escalate an unresolved access or safety problem according to urgency
+and the patient's wishes. Do not seek only opinions that confirm a preferred answer; compare the
+reasoning and evidence behind each view. See `../modes/evidence-check.md` and
+`../modes/next-action.md`.
 
 ## Patient autonomy comes first
 

@@ -46,6 +46,9 @@ country.** Treat that as a real possibility to check, never as a specific claim 
 > completely different drug. This kind of mismatch is exactly why you check the **active ingredient and
 > the milligrams printed on the package**, not the brand on the front.
 
+The box identifies product strength, not the personal dose. Use the prescription or discharge plan
+for the patient-specific regimen; a general leaflet does not establish what this person was prescribed.
+
 So the reliable thing to verify, every time, is what the box and blister itself say: the **active
 ingredient(s)** and the **strength (mg)** — and match that against what was prescribed. If the box and
 the prescription don't obviously line up, that's a "stop and ask the pharmacist before taking it"
@@ -80,7 +83,7 @@ green-light the combination.
 
 When a medicine is being started, stopped, or swapped, the questions that matter are: **does this replace
 the old one or get added on top of it?** and **when is the last dose of the old, and the next allowed
-dose of the new?** Pull those answers only from the prescription, the discharge note, or the leaflet — if
+dose of the new?** Pull those patient-specific answers only from the prescription or the discharge note — if
 the document doesn't state a schedule, you do **not** invent one. Where a document is silent on timing,
 that gap is itself the thing to take to the pharmacist or the team: *"the discharge note doesn't say when
 to take the first dose of the new one relative to the last old one — let's confirm that before you

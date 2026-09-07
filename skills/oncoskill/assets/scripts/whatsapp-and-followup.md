@@ -61,7 +61,7 @@ answers. These are **drafts to adapt**, not commitments — the user always read
   centre rather than pushing a closed door (`../../references/modes/next-action.md`).
 - **If the channel has gone quiet or tense** → slow down rather than push. A short pause, one clean ask
   next time, and consider having the **patient** send the next message — the "burned bridge" play in
-  `../../references/modes/next-action.md`. Hold complaints and escalation until after active treatment.
+  `../../references/modes/next-action.md`. Choose escalation by ongoing harm, access deadlines, and the patient's wishes; don't require waiting until treatment ends.
 
 ## A thank-you / handoff line
 

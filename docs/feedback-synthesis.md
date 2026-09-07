@@ -75,7 +75,7 @@ where a caregiver most needs a steady second brain. Added as new modes:
   chemoradiation/anaesthesia, and the fact that correction sometimes can be arranged faster. Framed
   as questions to the team, never self-treatment.
 - **Medications** under the stricter public-tool boundary (see §5 of this list): explain a
-  prescribed medicine and its leaflet, verify the active ingredient/dose *from the package* (brands
+  prescribed medicine and its leaflet, verify the ingredient/strength from the package and regimen from the prescription (brands
   differ by country — given only as a flagged example), flag interactions to the **pharmacist/team**,
   and **never compute a personal dose or green-light combining drugs.** The pharmacist is surfaced as
   the fast, free, underused first-line.

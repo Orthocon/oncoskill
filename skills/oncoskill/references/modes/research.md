@@ -1,7 +1,6 @@
 # Mode: deep research & fact-check (find the best evidence, protocols, and experts — and verify it)
 
-This is Oncoskill's most demanding job and a core differentiator: for a specific person, find **all
-the current protocols** for their exact cancer **and stage**, find **where and with whom** it is best
+This is Oncoskill's most demanding job and a core differentiator: for a specific person, find **the relevant current protocols** for their exact cancer **and stage**, find **where and with whom** it is best
 treated, and **verify every claim to a source** — then hand back a clean, prioritized, source-tagged
 result. It is largely a **Live-research-mode** job (it needs real search tools); in Evidence mode you
 can still teach the method, prepare the prompts, and structure what's known. (Voice: `../core/tone.md`.
@@ -13,22 +12,17 @@ Boundaries: `../../POLICY.md` — you inform and prepare; you don't diagnose, pr
 
 This is heavy work. Don't unload it all in one message. **Offer it** when it's relevant or when they
 ask — gently, collaboratively, e.g. *"if you want, I can look into the current protocols for this and
-who specialises in it, so you have the full picture — no rush."* Phrase everything so it **never reads
-as "your clinic is bad."** Frame extra options as *additional* information to discuss, not a verdict on
-their team. If the local plan genuinely looks out of step with guidelines, raise it **gently, as
-questions**, and offer to help find alternatives *if they have the energy for it* — and make clear
-you'll help either way. This is the advocacy stance in practice: trust the team, and verify — calm,
-weighted homework, not a fight. (Settled clinical calls aren't relitigated through research; the gap-
-check in `evidence-check.md` is for genuine access or evidence gaps.)
+who specialises in it, so you have a clearer picture."* Describe discrepancies factually, with
+sources and missing context. Do not make personal judgements about a clinic, but do not hide a
+supported concern. Help check an existing decision or arrange an independent opinion when requested
+(`evidence-check.md`).
 
-## Step 0 — the staging gate (don't skip)
+## Step 0 — what is documented, and what is still unknown?
 
-Treatment depends on the **exact cancer type and stage**. If staging isn't complete yet, the right
-first job is **completing the staging**, not hunting protocols — explain why, and what's typically
-needed to finish it (e.g. the imaging/pathology/markers that are missing). Protocol- and
-expert-research becomes meaningful **once the stage is established**. (This ties into the care-plan
-gap-check in `evidence-check.md`.) You may *restate* a stage a signed report documents; never infer it
-yourself from raw data or images.
+Record the cancer type and stage only as documented. Do not infer a missing stage. Missing staging
+limits treatment comparisons, but it must not block finding an expert, arranging a second opinion,
+or asking how to complete the work-up. Research can proceed with explicit conditional branches;
+do not present an option as applicable until the relevant clinical details are confirmed.
 
 ## What to research, in order
 
@@ -48,25 +42,19 @@ needs a real source. Mark anything you couldn't confirm as **unverified** — do
 State medical facts honestly as "generally / guideline-recommended — confirm with your team," never
 "RCT-proven" unless that is literally true.
 
-## The gold-standard verification method (offer for high-stakes decisions)
+## Source verification, with optional help from other models
 
-For a major decision, the agent can run a rigorous fact-check itself **and** walk a willing user
-through the multi-tool method the maintainer used in practice. Suggest it when the stakes justify it;
-don't impose it on everyone.
+For a consequential claim, open the original guideline or paper and check the actual passage,
+publication/update date, population, treatment setting, and uncertainty. A real URL or an abstract
+that mentions the topic is not proof that the claim is supported. If access is blocked, say so;
+do not imply the full text was read. Keep enough detail to find the passage again.
 
-1. **Turn on deep-research mode** for this step — it genuinely matters here.
-2. **Get independent deep-research from 2–3 strong models** (e.g. Claude, ChatGPT, Gemini),
-   *separately*, so they don't anchor on each other.
-3. **Cross-check them.** Hand each one the others' output with a prompt like: *"Another model produced
-   this. What's here that you're missing, and what do you have that it doesn't? Confirm everything with
-   sources/links, and say honestly which sources you can't verify — another tool may be able to."*
-4. **Consolidate in ONE main AI** (the others are second opinions). Have it merge the reports, check
-   each source actually exists, and **tag every source: verified / not verified / couldn't confirm
-   internally — and where**.
-5. **Fact-check the most critical claims against the actual source documents** — e.g. load the
-   consolidated report + the source PDFs into a source-grounded tool (NotebookLM or similar) and ask
-   ~10 targeted questions on the highest-stakes claims.
-6. **Finalize** in the main AI: re-verify, then produce the deliverable.
+If the user wants another model's research, it can help find missed sources or disagreements. It is
+optional, not a prerequisite to useful help. Models may share sources and errors: **agreement is
+not independent confirmation**. Compare the original evidence behind their answers, including
+evidence against the preferred option. Consolidate into one short answer: what is supported, what
+remains uncertain, and the next useful question. Never launch paid tools or send the case to another
+service without the person's permission. Stop when more searching no longer changes the next step.
 
 ## Privacy before you put a case into multiple models
 

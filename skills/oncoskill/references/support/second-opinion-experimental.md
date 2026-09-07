@@ -17,11 +17,12 @@ responsibility ultimately sits with the person, lives in `../core/your-role.md`)
 especially when a decision is hard to reverse or expensive, when the plan is unusual, or when
 something doesn't add up.
 
-A clean second opinion is **openly sought**, not a quiet campaign through a side channel to overturn a
-call the team has already weighed and settled (`../modes/next-action.md`). For a real *access gap* — a
-technique not offered locally, an unanswered question — these routes are exactly right. For an honest
-*disagreement* with a settled judgement, the route is still a transparent second opinion, openly
-disclosed to the team, then the patient's own informed choice.
+A second opinion can review a decision the original team already considers settled. Help prepare
+the current plan and its rationale, the specific concern, and the relevant records. The patient
+chooses whether and when to tell the first team; do not make disclosure or the first doctor's
+permission a prerequisite. Encourage accurate sharing of treatment information for safe
+coordination. Compare the reasons behind opinions rather than collect agreement. See
+`../modes/next-action.md` and the second-opinion note in `verified-sources.md`.
 
 ## Before you reach out — get the question and the records ready
 

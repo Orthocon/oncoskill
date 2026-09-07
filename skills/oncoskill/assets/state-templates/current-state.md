@@ -1,6 +1,7 @@
 # Current State
 
-> Your living one-page picture — the **single place** Oncoskill keeps track of everything. It reads
+> Your living one-page picture. Oncoskill can use it only when this file is accessible; it verifies
++> writes before saying an update was saved, otherwise it provides text for you to copy. It reads
 > this at the start of a session instead of relying on chat memory, and offers to update the relevant
 > section at the end. Keep it wherever you like (a doc, Notion, a note). Fill only what you're
 > comfortable storing, and leave the rest blank — a half-filled page is still useful.
@@ -40,12 +41,13 @@
 ## Medications
 
 > A record of what's prescribed, to **discuss with your team and your pharmacist** — not a dosing plan
-> the skill makes. Copy doses straight from the prescription or the package leaflet; the pharmacist is
-> a fast, free first stop for anything that doesn't add up or for interaction worries.
+> the skill makes. Copy the personal dose/schedule from the prescription or discharge instructions;
+> the box/leaflet identifies the ingredient and strength, not the personal regimen. Mark unknowns and
+> ask the pharmacist/team. Keep current entries separate from dated history.
 
-| Medicine (and brand) | Dose | Schedule | What it's for | Last dose taken | Source (Rx / leaflet) |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
+| Medicine (and brand) | Prescribed dose / schedule | Status | Status date | What it's for | Last dose taken | Source |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |
 
 ## Allergies & reactions
 
@@ -110,5 +112,5 @@
 - **Last updated:**
 
 ---
-**Change log (provenance — don't rewrite history, append):**
+**Change log (update current entries above; preserve superseded details here):**
 - _date_ — _what changed_ — _why_ — _source_ — _by (patient / caregiver / Oncoskill-assisted)_

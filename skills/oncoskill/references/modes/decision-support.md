@@ -14,13 +14,11 @@ from panic, not from getting the maths wrong.
 
 ## When this mode fits — and when it doesn't
 
-Reach for it when someone is genuinely *stuck between options* and asking, in some form, "what should
-we do?" — and there's real uncertainty, not a settled medical instruction. It does **not** override
-a clinical decision the treating team has already weighed and made; if the question is really "is my
-doctor right?", the clean route is a transparent second opinion, openly sought, not a quiet structured
-case for going against them (`evidence-check.md`, `../support/second-opinion-experimental.md`). And if
-the choice hangs on a medical fact you don't have — which plan is more effective for *this* tumour,
-whether a delay is safe — that's not yours to fill in; it becomes a precise question for the team.
+Reach for it when someone is stuck between options, including whether to seek a second opinion on
+an existing plan. Help compare reasons and uncertainties without choosing treatment. If the choice
+depends on a missing clinical fact — which plan is more effective for this tumour, or whether a
+delay is safe — obtain a focused answer from the team or an independent specialist. See
+`evidence-check.md` and `../support/second-opinion-experimental.md`.
 
 ## How to walk through a choice
 
@@ -94,8 +92,8 @@ from the board. So for *each* option, work out the hard timing: by what date mus
 it to still be possible, and what closes after it. Lay those dates next to each other — sometimes the
 decision makes itself ("B has to be chosen by Friday or it's gone, so that's the real deadline, not
 next month"). Whether a short, deliberate delay to confirm something is safe is itself a question for
-the team — overall treatment time often matters more than the exact start date, but that's theirs to
-judge, not ours to assume (`next-action.md`, *the informed-decision delay*).
+the team or a reviewing specialist. Do not compare the importance of start date and overall treatment
+time across cancers or infer a safe delay (`next-action.md`, *Timing — ask for the actual window*).
 
 ## A grounding move when it's all too much
 

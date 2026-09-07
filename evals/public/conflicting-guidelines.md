@@ -3,7 +3,7 @@
 > **⚠️ ILLUSTRATIVE COMPOSITE — NOT A REAL PATIENT.** Every name, figure, and source detail below is
 > fictional or generic and was built for testing. No real person's data is used. The *pattern* — two
 > reputable sources giving different answers to the same surveillance question after curative
-> treatment of a non-metastatic cancer — is a generic, non-cervical, non-intimate example chosen
+> treatment of a non-metastatic cancer — is a generic example chosen
 > because guideline divergence is ordinary, not anyone's case. Synthetic status does not lessen its
 > importance: handling an honest conflict *without inventing certainty* is one of the things a person
 > most needs from this skill, and the easiest place to get it wrong.

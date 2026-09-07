@@ -10,8 +10,26 @@ second opinions and cross-border care, and holding the emotional load.
 
 It is non-commercial in spirit; anyone may use, fork, and improve it.
 
-> ⚠️ **Status: work in progress (v0).** This repository is being built in the open. Structure
+> ⚠️ **Status: early release (v0.1.1).** This repository is being built in the open. Structure
 > and content may change. Nothing here is medical advice.
+
+## Start here
+
+Give your assistant this message — it can handle the setup:
+
+> Help me install and use Oncoskill: https://github.com/VladShifter/oncoskill . Read INSTALL.md,
+> choose the simplest method this app supports, and verify the skill actually loaded. Then help
+> with my first question. Reply in my language; tell me if you cannot read files or save updates.
+
+По-русски:
+
+> Помоги установить и использовать Oncoskill: https://github.com/VladShifter/oncoskill . Прочитай
+> INSTALL.md, выбери подходящий способ для этого приложения и проверь, что скилл загрузился.
+> Затем помоги с моим первым вопросом. Скажи, если не можешь читать файлы или сохранять изменения.
+
+Or download [the Skill archive](downloads/oncoskill.zip?raw=1) / [the single chat document](downloads/oncoskill-chat.md?raw=1).
+You can start without medical documents: “Help me prepare for tomorrow's oncology appointment.”
+[More help with setup](docs/run-as-your-own-agent.md).
 
 ## Your role: trust your team, and verify
 
@@ -60,7 +78,7 @@ decides, diagnoses, or acts on its own.
   restate what a signed report already documents (e.g. a stage written in the report), but it won't
   independently infer a diagnosis or stage from raw data or images.
 - **Not a medication adviser.** For prescribed medicines it explains the leaflet, helps you verify
-  the active ingredient and dose **from the package** (brands differ by country), and flags possible
+  the ingredient/strength **from the package** and regimen **from the prescription** (brands differ by country), and flags possible
   interactions — but it does **not** compute a personal dose or green-light combining drugs. Those
   go to your **pharmacist** (fast, free, underused) and your team.
 - **Not a place for your private data.** See [Privacy & trust](#privacy--trust) and
@@ -75,56 +93,40 @@ honest scope.
 
 ## How to use it (no coding required)
 
-Oncoskill is an [Anthropic Agent Skill](https://agentskills.io). The simplest way to use it:
+Use the message or downloads in [Start here](#start-here). The installable package follows the
+[open Agent Skills format](https://agentskills.io/specification). An assistant with native skill
+support can install the folder; an ordinary chat can use the attached single document if it can
+read/search it. Neither route guarantees persistent memory or internet access.
 
-1. Open a **Claude Project** (or Claude with custom Skills enabled).
-2. Upload the `skills/oncoskill/` folder as a custom Skill (or drop its contents into your
-   Project's instructions/files).
-3. Paste or upload a document and ask, e.g., *"Explain this and prepare questions for my
-   doctor,"* or *"What should we do next?"*
-
-> Oncoskill works best when it can read your documents, but it never needs the internet to be
-> useful — see **Evidence mode vs Live research mode** below.
-
-**Want it to act like a dedicated agent — a patient's assistant or a caregiver's right hand — rather
-than a tool you invoke each time?** Oncoskill ships with two ready personas and a portable entry
-point, so it can run the same way on Claude, Codex, or a from-scratch bot:
-
-- **[skills/oncoskill/AGENTS.md](skills/oncoskill/AGENTS.md)** — the install entry point: pick a role,
-  load the skill, keep the non-negotiables.
-- **[roles/patient.md](skills/oncoskill/roles/patient.md)** and
-  **[roles/caregiver.md](skills/oncoskill/roles/caregiver.md)** — the two personas (who you are, how
-  you talk, how proactive to be).
-- **[docs/run-as-your-own-agent.md](docs/run-as-your-own-agent.md)** — the plain-language how-to for
-  setting this up across different runtimes.
+The agent's [installation instructions](INSTALL.md) and the [short user guide](docs/run-as-your-own-agent.md)
+cover both routes. Help with the first real question comes before setting up notes or folders.
 
 ## Privacy & trust
 
 Cancer documents are highly sensitive. Please read this before uploading anything.
 
-- **Only install Oncoskill from the official repository, and audit it before use.** Anthropic
-  warns that skills from untrusted sources can misuse tools or leak data. Oncoskill is fully
-  auditable, ships **no executable scripts and makes no outbound network calls** in v0, and
-  never fetches hidden external URLs.
-- **Agent Skills are not covered by Zero Data Retention (ZDR).** Anything you upload is handled
-  under the standard data-retention policy of whichever Claude surface you use. Oncoskill shows
-  a short privacy reminder before you share documents.
+- **Use a source you trust.** The installable skill contains no executable code. Your assistant may
+  use its existing tools to read documents and research public sources for your request; it must not
+  include patient identifiers in searches or upload private files to another service without consent.
+  External sending, booking, payments, and sharing stay with the human.
+- **The skill adds no special storage protection.** Retention, training use, and access depend on
+  the app and settings, including whether it runs locally. Share only what is needed; removing
+  identifiers first is allowed. The assistant gives a short reminder before document upload.
 - **No real patient data lives in this repository** — only templates, logic, and synthetic
   illustrative examples. Keep your own and others' medical data out of any fork.
 
 ## Evidence mode vs Live research mode
 
-Depending on where Oncoskill runs, it may or may not have internet access (the Claude API has
-none; claude.ai depends on your settings; Claude Code has full access). So Oncoskill works in
-two modes and tells you which one it's in:
+Oncoskill checks the tools actually available in the current session:
 
-- **Evidence mode (always available):** reasons only from what you provided plus its own
-  *bundled, dated* reference facts. It will say *"reviewed through: <date> — confirm the current
-  version with your team."*
-- **Live research mode (only when a web/search tool is actually available):** can look up
-  current guidance and cite it.
+- **Evidence mode:** explains supplied documents and uses the limited, dated
+  [checked source notes](skills/oncoskill/references/support/verified-sources.md). Other clinical
+  specifics are leads to verify, not a claim that the whole bundle has been medically reviewed.
+- **Live research mode:** with an available web tool, reads original sources and checks the supporting
+  passage and its applicability. A working URL or agreement between models is not verification.
 
-It never claims something is current without either a live check or a dated bundled source.
+It distinguishes when a source was published from when it was checked, and says when something
+cannot be confirmed. If it cannot save your Current State, it provides an update to copy instead.
 
 ## Repository layout
 
@@ -136,8 +138,10 @@ skills/oncoskill/      The installable, self-contained skill (everything below s
     references/          the modes + core rules + support packs
     assets/, schemas/    templates, letters, scripts, and the state schemas
     POLICY.md, …         the binding policy + licenses that travel with the skill
-docs/                  Human-readable design docs, incl. run-as-your-own-agent.md
-research/              source-ledger.yaml — the audited source list (repo-only, NOT bundled)
+downloads/             Ready-to-use zip and single chat document
+INSTALL.md             Instructions for the assistant helping you set up
+docs/                  Human-readable docs, incl. run-as-your-own-agent.md
+research/              source-ledger.yaml — research register (repo-only, NOT bundled)
 evals/                 Public, synthetic test scenarios (golden tests + red-team)
 scripts/               Dev tools (e.g., a pre-commit scan for accidental personal data)
 ```
@@ -147,8 +151,9 @@ scripts/               Dev tools (e.g., a pre-commit scan for accidental persona
 Oncoskill follows a strict source hierarchy (current clinical guidelines > systematic reviews >
 major-center patient guidance > peer-reviewed studies; forums/blogs/social are not evidence)
 and phrases recommendations as *"guideline/consensus-recommended,"* never *"proven by RCT"*
-unless that is literally true. Doctor names, doses, and figures always need a source. See
-[research/source-ledger.yaml](research/source-ledger.yaml).
+unless that is literally true. Doctor names, doses, and figures always need a source. Start with the
+[checked source notes](skills/oncoskill/references/support/verified-sources.md); the
+[research register](research/source-ledger.yaml) also contains older leads requiring rechecking.
 
 ## Optional: an early agent network
 

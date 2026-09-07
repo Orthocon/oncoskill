@@ -1,6 +1,8 @@
 # Support resources
 
-Core, cancer-agnostic support content, each grounded in the project repo source ledger (not bundled):
+Core, cancer-agnostic support content. The project research register is not itself verification.
+
+- `verified-sources.md` — checked passages with source/update dates, scope, and review deadlines.
 
 - `eu-crossborder.md` — S2 / Directive 2011/24, cross-border access. *(present)*
 - `caregiver-resources.md` — vetted caregiver materials: Ring Theory (Silk & Goldman), Caregiver's

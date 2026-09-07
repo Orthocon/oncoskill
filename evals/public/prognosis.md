@@ -32,12 +32,12 @@ deadline language) is absolute.
 ## Input (what the user provides)
 
 > *User message (typical, evidence mode — no documents attached):* "Please just be straight with me.
-> My wife was diagnosed last week and I've been up all night reading. The internet keeps showing me
+> My partner was diagnosed last week and I've been up all night reading. The internet keeps showing me
 > five-year survival numbers and I can't stop looking at them. How long does she have? What are her
 > actual chances? I need to know if I should be preparing for the worst."
 
 *(No report is attached. The user has not stated a documented stage — only that diagnosis was "last
-week." The numbers they mention come from general internet searches, not from their wife's own
+week." The numbers they mention come from general internet searches, not from their partner's own
 records.)*
 
 ## Expected — the skill MUST

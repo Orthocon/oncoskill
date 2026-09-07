@@ -53,6 +53,18 @@ v0 is prompt/reference content with no executable harness. To run a golden test 
 - `public/unsupported-centre-claim.md` — no vague "best centre"; criteria-based comparison.
 - `public/live-interpreter.md` — faithful real-time translation; preserve doses/dates; no advice.
 
+**0.1.1 regressions:** `public/release-regressions.md` covers setup from a link, fever outside an assumed
+window, iron route, review of agreed plans, complaints during treatment, honest persistence,
+model consensus, and embedded document commands. Food-safety and redaction expectations were corrected.
+Do not use the old result file as evidence that the new version passes these cases.
+
+## Offline checks versus behaviour
+
+`python3 -m unittest discover -s tests -v` verifies package integrity and installation files without
+calling a model. The editing-session examples in `results/2026-09-07-walkthrough.md` show intended
+responses and their limitations; they are not fresh model runs. No 0.1.1 cross-host behavioural PASS
+is claimed until actual responses are recorded with provenance.
+
 ## Recording a run
 
 When you run an eval, record the **provenance** of the run alongside the result: model + version,

@@ -30,18 +30,17 @@ one or two light questions:
 ## Propose a setup that matches their level — when the moment is right
 
 This is the **one place of memory**: a single living **Current State** doc the agent reads at the
-start of a session and updates as things change. Medications, labs, decisions, recommendations,
+start of a session, when it can access it, and proposes updates as things change. Medications, labs, decisions, recommendations,
 dates and windows, documents, open questions — these live as *sections inside Current State*, not as
 a pile of separate trackers. Don't invent a new ledger; if something needs recording, say "I'll
-update the relevant section of your Current State."
+prepare an update to the relevant section of your Current State."
 
-- **Just one chat (most people).** *"Make a Project in whatever you use — ChatGPT,
-  Claude, Gemini — call it whatever feels right to you (a name, 'Treatment', anything), keep our
-  conversations there, and paste in the short starter note I'll give you. That's it. I'll keep track
-  of the important things inside it for you."* Offer the short instructions + the
-  **simple Current State** to paste (`../../assets/state-templates/current-state-simple.md`) — the
-  plain, no-tables list. **Default to the simple one**; it's a handful of lines, not a form. Don't
-  mention the full tabular version unless they ask for more structure.
+- **Just one chat (most people).** Give the short Current State template to keep in a note or
+  supported Project. Explain: *"Keep the latest copy here. If I can't read it in a later chat, paste
+  it again. I can prepare updates; I'll only say they're saved when I've actually written and checked
+  the file."* Default to `../../assets/state-templates/current-state-simple.md`. Do not promise a
+  Project feature exists in every app or that installing the skill creates persistent memory.
+
 - **Comfortable with folders (Drive / Notion).** Suggest a small structure — Current State, a Doctor
   Share Pack, Documents — and offer the matching templates (`../../assets/state-templates/`, schemas
   in `../../schemas/`). Even here, start them on the **simple** Current State and mention the fuller

@@ -48,5 +48,5 @@ other" — is in `../../references/modes/next-action.md`).
 | 2 | Staging CT chest/abdo/pelvis | CT | 2026-02-14 | Chest/abdomen/pelvis | Images + report | DICOM | Disc enclosed |
 | 3 | Prior MRI head | MRI | 2025-11-?? | Head | Report only — images held at [home centre] | PDF report | Images being requested; see `../letters/` |
 
-_DICOM headers de-identified to name + DOB only (needed to match the file); MDT-note QR flattened.
+_DICOM headers de-identified to name + DOB only (needed to match the file); MDT-note QR removed and saved copy checked.
 Outreach and private notes are not part of this pack._

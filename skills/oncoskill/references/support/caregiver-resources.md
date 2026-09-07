@@ -43,7 +43,7 @@ Full audit + dates: the project repo source ledger (not bundled), `caregiver_sup
 
 - **Taking Care of Yourself** — ACS (the self-care loop: name the toll → you can't do it alone → ask
   for specific help → respite → red flags).
-  `https://www.cancer.org/cancer/caregivers/what-a-caregiver-does/taking-care-of-yourself.html`
+  `https://www.cancer.org/cancer/caregivers/taking-care-of-yourself/self-care-tips.html`
 - **The Emotional Side of Caregiving** — Family Caregiver Alliance (guilt, resentment, anticipatory
   grief — permission-giving language). `https://www.caregiver.org/resource/emotional-side-caregiving/`
 - **Caregiver Burnout fact sheet** — CancerCare (symptom self-check; free oncology social-worker

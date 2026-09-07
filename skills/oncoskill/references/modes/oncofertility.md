@@ -25,9 +25,9 @@ Before anything else, establish two things, gently:
    without steering. Some people don't know yet, and that's allowed too; preserving an *option* buys
    time to decide later.
 
-Then say the honest thing plainly: this is usually a time-pressured decision, and a short, weighted
-delay to explore it is often safe — but whether *this* treatment can wait even a little is a question
-only the oncologist can answer. Frame it as a question to the team, never as your reassurance.
+Ask the oncology and fertility teams to coordinate promptly: what is the latest acceptable treatment
+start, and which preservation options fit without an unapproved delay? Do not reassure the person
+that a short delay is generally safe. Record an unknown window as unknown, not as available time.
 
 ## Four different goals, often confused
 

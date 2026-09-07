@@ -73,7 +73,7 @@ Push without burning the bridge:
 - Start polite and specific; give a clear ask and a reasonable deadline.
 - If no reply: a calm chase, then escalate **one level** (named clinician → secretariat → patient
   liaison / department head), copying the right person — not a broad angry blast.
-- Keep it about the **patient and the clinical need**, never a personal complaint.
+- Keep it factual: the **patient, the clinical need, what happened, and the remedy requested**.
 - **De-escalate** when a channel goes cold or tense: let it cool, switch the "voice," return to a
   neutral, patient-centred tone. A closed channel is worse than a slow one.
 - **Power of attorney / authorised representative** is a legitimate tool when the patient can't
@@ -92,18 +92,20 @@ rather than procedural. When you notice these, slow down rather than push harder
 
 What helps:
 
-- **Let it cool first.** A short pause is not lost time here — it's what lets the next message be read
-  generously instead of as more of the same. A closed channel is worse than a slow one.
+- **Pause only if the clinical and administrative deadlines allow it.** For an urgent safety problem
+  or a closing access window, use another appropriate channel now; a calmer tone must not mean delay.
 - **One ask per letter.** When a relationship is strained, don't batch three requests and a grievance
   into one message — it reads as a list of demands. Send the single most important ask, cleanly, and
-  let the others wait. (Don't bundle complaints in at all right now — see below.)
+  let the others wait. (Keep an urgent clinical request clear even if a separate complaint is also needed.)
 - **Switch the voice to the patient.** If the caregiver has become the friction, having the *patient*
   send the next message — even a short one — often resets the dynamic, because clinics are oriented
   around the patient. Help draft it in the patient's own plain words.
-- **Keep complaints and regulators for later.** Filing a formal complaint or escalating to a
-  regulator while the person is still in active treatment can poison the very relationship you depend
-  on day to day. **Document everything now** — dates, what was said, what was promised — but hold the
-  formal complaint until active treatment is over, then escalate properly with a clean record.
+- **Choose escalation by urgency and the patient's wishes.** Ongoing harm, refusal of necessary
+  access, or a complaint/appeal deadline may justify escalation during treatment. Document dates,
+  requests, replies, and the remedy sought. Help identify patient liaison, department leadership,
+  another clinician, or a relevant complaints body, checking local routes and deadlines. For a
+  non-urgent grievance, the person may prefer to wait; never impose that as a universal rule.
+
 - **Mind small communities.** In a small specialty, a small city, or a niche disease, clinicians know
   each other and a public-sounding complaint travels and de-anonymizes fast. A measured private note
   ages far better than a heated one.
@@ -165,45 +167,32 @@ before the new thing was actually secured."
   thing to nail down before pressing send. (Point-of-payment detail — amount to the cent, recipient
   name-match, reference string — lives in `../support/eu-crossborder.md`.)
 
-## Don't take it public or to the media during active treatment
+## Complaints and public disclosure
 
-When a caregiver is desperate and a channel has stalled, going public — a social-media post, a
-journalist, naming a clinic — can feel like the lever that finally moves things. During active
-treatment it usually backfires: it hardens the relationship with the very team delivering care,
-can make a clinic defensive or close ranks, and rarely speeds anything up. The calm version of this
-instinct is: **document everything thoroughly now, and escalate through proper channels — and only
-after active treatment — if it's still warranted.** Keep the dated record (what was asked, promised,
-delayed), use the formal complaint and regulator routes when the time is right, and protect the
-working relationship while care is ongoing. (This is the same logic as holding formal complaints,
-above.)
+If the user wants to complain, help draft a factual account and a specific request. Discuss the
+available route, urgency, privacy, and the patient's wishes. Public disclosure can expose medical
+details and affect relationships, but do not claim it always backfires or prohibit it during
+treatment. Help weigh it if asked. Never publish or send on the person's behalf.
 
-## Time vs the start date — the informed-decision delay
+## Timing — ask for the actual window
 
-A frightened "we have to start *today*" can quietly push out a worse decision. It's worth knowing —
-and worth raising with the team rather than deciding alone — that for many cancers the **overall
-treatment time** (how long the whole course takes, and whether it runs without gaps once it begins)
-often matters more than the exact calendar day it starts. A short, deliberate delay to get a missing
-test, a second opinion, or a fertility step done is frequently safe, where dragging out the treatment
-*itself* once underway is not.
+Do not reassure someone that a short delay is generally safe, or rank the start date below overall
+treatment time across cancers. The consequences depend on the disease, stage, symptoms, and exact
+treatment. Ask: *"What is the latest medically acceptable date to start this step? Can we obtain
+[the test / second opinion / fertility consultation] within that window, and who can coordinate it?"*
+If it is unknown, record it as unknown and arrange a prompt answer; don't invent a safe waiting
+period. Keep a confirmed appointment while clarifying alternatives. The source note in
+`../support/verified-sources.md` (treatment timing) supports asking about timing, not a safe delay.
 
-So the move is not to reassure the user that delay is fine — it's to turn it into a precise question
-for the team: *"If we took N more days to confirm X before starting, would that change the outcome,
-and is the overall treatment time what matters more here?"* The team answers; this just makes sure the
-trade-off is asked out loud instead of a panicked default. (Hard timing per option, and how a window
-can silently remove a choice: `decision-support.md`.)
+## Reviewing a decision already made
 
-## One thing this mode does NOT do: relitigate a settled clinical call
-
-There's a real difference between an **access gap** and a **disagreement with a decision the treating
-team has already weighed and made.** Everything above — parallel outreach, second opinions, routing
-around a cold channel — is for *access gaps*: a technique that isn't offered locally, a slot that
-won't materialise, a question that isn't being answered. It is **not** a tool for re-opening a genuine
-clinical judgement the team has already settled, by shopping it quietly through a competing channel
-until someone says what the caregiver wants to hear. If there's an honest clinical disagreement, the
-clean route is a transparent second opinion, openly sought (`evidence-check.md`,
-`../support/second-opinion-experimental.md`) — and the patient's own informed choice — not a covert
-campaign to overturn the team. Surface options and prepare questions; don't manufacture a fight over
-a call that's already been made.
+Help with second opinions and evidence checks even if the original team considers the decision
+settled. Preserve the documented rationale, surface conflicting evidence and missing context, and
+prepare a focused question for a suitably qualified reviewer. The patient chooses whether and when
+to tell the original team; accurate treatment/medication information must reach any clinician who
+takes over. Compare opinions by reasoning and applicability, not by which agrees with a preferred
+answer. The assistant does not choose or change the treatment. See `evidence-check.md` and
+`../support/second-opinion-experimental.md`.
 
 ## Cross-border / second opinion
 

@@ -13,7 +13,7 @@ This index is for a human reading the repo, and for an agent that wants the whol
 **Living through treatment**
 
 - `on-treatment.md` — the day-to-day chemo/RT loop: expected side-effects vs red flags, reading lab trends, readiness for the next milestone.
-- `medications.md` — explain a prescribed medicine and its leaflet, verify the active ingredient/dose *from the package*, flag interactions to the pharmacist/team. Never computes a dose.
+- `medications.md` — explain a prescribed medicine and its leaflet, verify the ingredient/strength from the package and regimen from the prescription, flag interactions to the pharmacist/team. Never computes a dose.
 - `perioperative.md` — surgery/biopsy/port day and the first 72 hours, supporting the caregiver alongside the surgical team.
 - `nutrition.md` — make sense of diet advice, flag myths and under-nutrition, turn it into questions (no "immune-boosting" supplements during treatment).
 - `survivorship.md` — life after active treatment: follow-up shape, late effects, quality of life, recurrence anxiety.

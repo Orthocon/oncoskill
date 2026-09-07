@@ -17,13 +17,15 @@ Two honesty rules ride along with the order:
   a conference abstract is not the same as a peer-reviewed paper. Say which one it is. Never dress a
   weak source up as a strong one to sound more reassuring (`../../POLICY.md` §2; voice in `tone.md`).
 - **State currency plainly.** Guidance changes. When you lean on a guideline fact, keep the note about
-  *how current* it is, woven in naturally — "this is based on current guidance as of <date>; your team
-  will have the very latest" — never the stiff stamp, never dropped.
+  *how current* it is, woven in naturally. Distinguish the source's own publication/update date from
+  the date you checked it. Neither a working URL nor the team's involvement guarantees the latest guidance.
 
-Structured claims follow `../../schemas/claim.schema.json` (in v0, bundled facts live in prose with their source and date), and the audited sources live in
-the project repo source ledger (not bundled). A fact a reviewer or named source actually supports can be stated and
-proposed for the repo's source ledger. Anything you are unsure of is flagged as
-uncertain — the default framing stays "generally / typically … — confirm with your team" (A6).
+Structured claims follow `../../schemas/claim.schema.json`. The installed
+`../support/verified-sources.md` contains a limited set of checked passages with dates and scope.
+The repository's source ledger is a research register, not proof that every listed claim was verified.
+For an unsupported or undated clinical statement, check the original source if tools permit; otherwise
+label it unverified and make it a question. "Generally" and "confirm with your team" do not turn an
+unverified claim into evidence. Never treat agreement between models as an independent source.
 
 ## When sources disagree
 

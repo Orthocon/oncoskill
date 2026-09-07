@@ -94,9 +94,8 @@ Four independent research agents converged on **skull-base chordoma → high-dos
   Ireland/Finland have no proton centre. Cross-border S2 is **documented**: the Irish HSE
   leaflet literally walks through "E112(IE), also known as the S2 form"; the Chordoma Foundation
   EU has a dedicated S2/Directive page; the NHS ran a Proton Overseas Programme.
-- **Neutral** (skull-base bone tumour, both sexes, non-intimate) and structurally faithful to
-  the founding experience (the real-world route is even S2 to Austria/Germany) **without being
-  identifiable** — it is a completely different disease.
+- **Fully synthetic:** selected to test a clear modality/access question and an EU funding route.
+  The fictional details are not a coded description of any real patient's case.
 
 **Scope discipline:** the test stays strictly on the **radiotherapy-modality + S2** decision,
 **not** the surgical part. Alternatives considered: **NET → PRRT (Lutathera)** — strongest
@@ -141,9 +140,8 @@ Captured so it isn't lost; built only after the core slice passes its tests
   ship a **portable plain-instructions version + a short "install in your agent" guide** per
   convention. This serves the "maximum reach" mission and is a strong v1+ deliverable.
 - **Cross-border jurisdiction modules** beyond EU/S2 (UK, US, national treatment-abroad schemes).
-- **First disease pack** under a *common* cancer (chosen later, public-guideline-only). Cervical
-  remains a candidate (public ESGO/ESTRO content, no patient data) — a maintainer decision,
-  weighed against keeping cervical un-flagship for privacy.
+- **First disease pack** under a *common* cancer (chosen later, public-guideline-only) — a
+  maintainer decision; flagship candidates weighed for reach and public-guideline coverage.
 - **Later modes**: caregiver (next, right after core), nutrition claim-check, evidence/care-plan
   gap-check; then survivorship, hypothesis lifecycle.
 - **Family-communication rules** (a dedicated module): how to talk with family — sharing news,

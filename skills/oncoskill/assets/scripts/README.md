@@ -51,7 +51,7 @@ actual language and check local terminology, not transplant these words.
   live, the script's job is to **ask the staff member**, not to answer (`../../POLICY.md`).
 - They don't push, threaten, or complain in the moment. Strained-channel recovery and escalation are
   handled calmly and in writing — see `../../references/modes/next-action.md` (the "burned bridge"
-  and escalation plays) and hold formal complaints for after active treatment.
+  and escalation plays); choose complaint timing by urgency, deadlines, and the patient's wishes.
 - They don't replace consent or authority. If staff can only speak to the patient or won't release
   information, that's an authorisation question, not a phrasing trick →
   `../../references/support/authorised-representative.md`.

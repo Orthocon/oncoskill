@@ -78,19 +78,21 @@
     },
     "medications": {
       "type": "array",
-      "description": "Medicines the patient is actually on or has been prescribed — recorded exactly as the prescription / leaflet states. The skill explains a medicine and its leaflet and flags interactions to check with the pharmacist or team; it never computes a personal dose, never green-lights combining drugs, and never invents a schedule. Anything beyond what the document says is a question for the pharmacist (a fast, free, underused first-line) or the care team.",
+      "description": "Current and historical medicines, with explicit status, date, and source. Personal dose/schedule come only from the prescription or discharge instructions; package strength is separate. Unresolved conflicts are recorded for the pharmacist/team, never resolved by guessing.",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
           "name": { "type": "string", "description": "Name as written (brand or generic). Brands differ by country — verify the active ingredient and strength from the package." },
           "active_ingredient": { "type": "string", "description": "Active ingredient as printed on the package, where known — helps spot hidden duplicates across products." },
-          "dose": { "type": "string", "description": "As stated on the prescription / leaflet, verbatim. Not computed by the skill." },
+          "dose": { "type": "string", "description": "Personal regimen copied verbatim from prescription/discharge instructions; never inferred from box strength or general leaflet dosing." },
           "schedule": { "type": "string", "description": "As prescribed (e.g. 'twice daily', 'as needed for pain'). Only from the prescription; never invented." },
           "reason": { "type": "string", "description": "What it is for, if the user knows." },
           "last_dose": { "type": "string", "description": "When the last dose was taken, if tracked — useful at handovers so a regimen is not doubled up." },
-          "next_allowed_dose": { "type": "string", "description": "Earliest next dose, only if the leaflet/prescription states a minimum interval. Never computed by the skill." },
-          "status": { "type": "string", "enum": ["active", "stopped", "as-needed", "held"], "description": "Whether it is current." },
+          "next_allowed_dose": { "type": "string", "description": "Only an explicit patient-specific time or instruction from the prescription/discharge plan. Never computed from a generic leaflet." },
+          "status": { "type": "string", "enum": ["active", "stopped", "as-needed", "held", "unknown"], "description": "Whether it is current." },
+          "status_date": {"type": "string", "format": "date", "description": "Date of the documented or reported status change; do not invent."},
+          "strength": {"type": "string", "description": "Product strength printed on the package; distinct from the prescribed dose."},
           "notes": { "type": "string" },
           "source": { "type": "string", "description": "Where this came from (prescription, leaflet, discharge note, the prescribing doctor). Provenance, not assertion." }
         }
@@ -131,7 +133,7 @@
     },
     "decisions": {
       "type": "array",
-      "description": "Key decisions taken (by the team and by the patient/caregiver) and why — so a choice made under stress is not silently forgotten or relitigated. Don't reopen a clinical call the treating team has already settled via a competing channel; revisiting is for genuine access gaps or new information.",
+      "description": "Decisions and their rationale, dates, and source. An agreed decision may be reviewed through a second opinion; preserve history and the patient's choice.",
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -142,7 +144,7 @@
           "reason": { "type": "string" },
           "alternatives": { "type": "array", "items": { "type": "string" }, "description": "Other options that were on the table." },
           "evidence_source_refs": { "type": "array", "items": { "type": "string" }, "description": "What it was based on — documents, guideline references, a claim_id." },
-          "can_revisit": { "type": "boolean", "description": "Whether this is genuinely still open vs already settled." },
+          "can_revisit": { "type": "boolean", "description": "Whether the user currently wants to revisit this decision. False is not a ban on a later second opinion." },
           "review_date": { "type": "string", "format": "date", "description": "When to look at it again, if relevant." }
         }
       }
@@ -165,7 +167,7 @@
     },
     "windows": {
       "type": "array",
-      "description": "Time-critical windows and deadlines that can silently eliminate an option — fertility, an overall-treatment-time limit, an authorisation deadline, a held slot, a payment deadline. Make them visible: what closes, what to do, who owns it, and the fallback. Frame timing as a question for the team (e.g. overall-treatment-time often matters more than the exact start date), not as self-treatment.",
+      "description": "Time-critical medical, administrative, or funding windows. Record actual dates and sources. A clinically acceptable delay must be confirmed for this case; never infer one from a general rule.",
       "items": {
         "type": "object",
         "additionalProperties": false,

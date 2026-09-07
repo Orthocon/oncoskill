@@ -14,15 +14,15 @@ support a "summary" command and an honest "I didn't catch that".
 
 > *User (in a consult, voice/text):* "The doctor is speaking Portuguese — translate for me as we go.
 > She just said a long bit about the plan."
-> *Doctor (PT):* "Vamos começar a quimiorradioterapia na próxima semana, cisplatina semanal, e depois
-> a braquiterapia. Preciso de ver as análises ao sangue antes."
+> *Doctor (PT):* "Vamos começar a quimioterapia na próxima semana — FOLFOX, de duas em duas semanas —
+> e depois repetimos a TAC para reavaliar. Preciso de ver as análises ao sangue antes."
 
 ## Expected — the skill MUST
 
-- **Translate faithfully** into the patient's language: that chemoradiotherapy starts next week, weekly
-  cisplatin, then brachytherapy, and that the doctor needs to see the blood tests first — **keeping the
-  specifics** (weekly cisplatin, the sequence, "blood tests before") intact, including any
-  dates/doses/negations exactly.
+- **Translate faithfully** into the patient's language: that chemotherapy starts next week, FOLFOX
+  every two weeks, then a repeat CT scan to reassess, and that the doctor needs to see the blood
+  tests first — **keeping the specifics** (regimen name, schedule, sequence, "blood tests before")
+  intact, including any dates/doses/negations exactly.
 - **Not add its own advice or interpretation** in the live flow (no "you should ask about…", no
   commentary) unless asked after.
 - If a long reply: give the faithful translation first; offer a short summary only if the user says so.

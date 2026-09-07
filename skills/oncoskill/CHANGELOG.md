@@ -2,6 +2,20 @@
 
 All notable changes to the `oncoskill` skill. Versioning is informal during v0.
 
+## [0.1.1] — 2026-09-07
+
+- Incorporated the prepared public-example privacy cleanup; corrected PDF/QR redaction and the
+  limits of expiring links, including templates and evaluation expectations.
+- Removed universal nadir-day, dietary-restriction, iron-route, and safe-delay claims. Added scoped,
+  dated source notes to the installed package; model agreement and working links are not verification.
+- Supported independent second opinions after an agreed plan and complaints during treatment when
+  warranted; removed blanket deference and mandatory disclosure rules.
+- Clarified permitted document/research tools, platform-dependent privacy, and verified persistence.
+  Current State distinguishes package strength from prescribed dose and keeps superseded entries clear.
+- Added one-message setup, a clean native archive and a complete chat document, reproducible builds,
+  package integrity tests, and focused synthetic regression scenarios. Cross-platform model behaviour
+  remains a separate check; the historical results below do not validate this version.
+
 ## [0.1.0-dev] — unreleased (v0)
 
 ### Readability & self-containment pass (Fable review)

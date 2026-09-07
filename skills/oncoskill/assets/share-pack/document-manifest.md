@@ -23,8 +23,9 @@
 **Imaging** is listed separately in `imaging-manifest.md` (studies, series, DICOM vs PDF).
 
 **Before this leaves your hands — the per-item check (full version: `../../references/core/privacy.md`):**
-- Each attached file has had **metadata, QR codes, and barcodes** stripped or the page flattened — those
-  can resolve to a full hospital record.
+- Unneeded identifiers and QR/barcodes are **actually removed**, hidden text and metadata cleaned,
+  and the saved copy reopened and checked. Flattening alone is not redaction. Mark unchecked files
+  as **check**, not as redacted.
 - Stray personal data this question doesn't need is removed (home address, unrelated ID numbers, other
   people's details); name + DOB kept **only** where the recipient needs them to match the file.
 - No internal or emotional notes, and **no unverified hypotheses** (yours or the skill's), rode along
@@ -48,7 +49,7 @@ leave the reader guessing.
 | 1 | Histopathology report | Pathology | 2026-02-18 | EN original | 3 | redacted ✓ |
 | 2 | MRI head report | Radiology | 2026-02-10 | EN original | 2 | redacted ✓ |
 | 3 | Staging CT report | Radiology | 2026-02-14 | EN original | 2 | redacted ✓ |
-| 4 | Skull-base MDT note | MDT note | 2026-02-24 | EN original | 1 | redacted ✓ — QR on footer flattened |
+| 4 | Skull-base MDT note | MDT note | 2026-02-24 | EN original | 1 | redacted ✓ — QR removed; saved copy checked |
 | 5 | Discharge note (biopsy) | Discharge | 2026-02-17 | EN original | 1 | redacted ✓ — meds list kept, address removed |
 
 _Imaging files themselves listed in `imaging-manifest.md`. Outreach notes and Current State are private

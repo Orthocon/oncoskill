@@ -13,10 +13,10 @@ one the user gave you from their own documents (`../../POLICY.md`). Match the re
 patient's own language. When the letter mentions where the full file lives, point to a **clean doctor
 share-pack** (`../share-pack/`), not the user's internal Current State.
 
-These are **access-engineering and coordination** letters, written to open a door, confirm something
-in writing, or move a document — not to argue a settled clinical decision. The clean route for a
-genuine disagreement is an openly-sought second opinion (`../../references/modes/evidence-check.md`),
-not a quiet campaign through a competing channel.
+These letters help obtain access, coordinate care, request an independent opinion, and resolve
+unanswered questions. A decision already made may still be reviewed. State the concern and desired
+remedy factually; don't turn an AI hypothesis into an accusation or omit inconvenient clinical
+information from a second-opinion request (`../../references/modes/evidence-check.md`).
 
 ---
 
@@ -171,7 +171,7 @@ disease post-surgery, 53-year-old patient, RT planned to start in ~4 weeks
 
 Dear International Office,
 
-**In brief:** On behalf of my spouse, R. (53), who has a clival (skull-base) chordoma with residual
+**In brief:** On behalf of R. (53), who has a clival (skull-base) chordoma with residual
 tumour after surgery, I am asking whether your team could review the file now and, if clinically
 appropriate, accept R. for **high-dose particle therapy (protons or carbon ions)**. Our local centre
 has no particle facility and plans standard photon radiotherapy starting in about four weeks; we are
@@ -210,8 +210,8 @@ clinical reports from the treating centre; medication and allergy list.
 Thank you very much for your time and consideration.
 
 Kind regards,
-[Name] — husband and representative of R.
-Phone / WhatsApp: [number] · Email: [email] · Languages: English, Portuguese, Russian
+[Name] — [relationship] and representative of R.
+Phone / WhatsApp: [number] · Email: [email] · Languages: [languages]
 
 ## Example A — cold first-contact (PT)
 
@@ -220,7 +220,7 @@ crânio — doença residual após cirurgia, doente de 53 anos, RT prevista para
 
 Exmo.(a) Senhor(a) / Gabinete Internacional,
 
-**Em resumo:** Em nome da minha esposa, R. (53 anos), com um cordoma clival (base do crânio) e tumor
+**Em resumo:** Em nome de R. (53 anos), com um cordoma clival (base do crânio) e tumor
 residual após cirurgia, gostaria de saber se a vossa equipa poderia rever o processo agora e, se
 clinicamente adequado, aceitar a R. para **radioterapia com partículas de alta dose (protões ou iões
 de carbono)**. O nosso centro local não dispõe de partículas e prevê radioterapia convencional
@@ -262,8 +262,8 @@ lista de medicação e alergias.
 Agradeço muito a vossa atenção e disponibilidade.
 
 Com os melhores cumprimentos,
-[Nome] — marido e representante de R.
-Telefone / WhatsApp: [número] · Email: [email] · Línguas: inglês, português, russo
+[Nome] — [relação] e representante de R.
+Telefone / WhatsApp: [número] · Email: [email] · Línguas: [línguas]
 
 ## Example B — insurance / coverage-activation (EN)
 
@@ -273,7 +273,7 @@ Dear [Broker name],
 
 I hope you remember me — you helped me arrange [policy/product] in [year]. I urgently need your help.
 
-My spouse, R. (insured, policy [policy no.]), has been diagnosed with a skull-base chordoma and may
+R. (insured, policy [policy no.]) has been diagnosed with a skull-base chordoma and may
 need **particle radiotherapy that is not available in [country]**, possibly at a centre abroad. Could
 you please confirm **in writing**, with [insurer], how we can activate the coverage for **treatment
 abroad / a second medical opinion** when the required technique is unavailable domestically?

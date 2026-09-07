@@ -91,8 +91,8 @@ Two things that save real time:
 
 **A non-response is itself an event — log it.** Silence after a records request is not nothing; it's a
 data point. Note the date you asked, how, and through which channel, and set a date to chase. If it
-keeps going unanswered, that record is what a calm escalation (or, *after* active treatment, a formal
-access complaint) is built on. Offer to capture all of this — the request sent, the date, the channel,
+keeps going unanswered, that record supports escalation or a formal access complaint, including
+during active treatment when access, ongoing harm, or a deadline makes that necessary. Offer to capture all of this — the request sent, the date, the channel,
 and any non-response — in the **documents and outreach sections of Current State**; don't start a new
 tracker for it. (Channels and how to escalate without burning the bridge: `../modes/next-action.md`.)
 
@@ -101,10 +101,9 @@ tracker for it. (Channels and how to escalate without burning the bridge: `../mo
 A records request that goes unanswered is a setback to work around, not a catastrophe — keep the
 language and the next move proportionate. Push politely and specifically, give a clear ask and a
 reasonable deadline, and if it stalls, escalate one level through the proper channel rather than
-sending an angry blast. Formal access complaints and regulators are a real route, but they generally
-belong *after* active treatment, when you have a clean dated record — not while the relationship is
-carrying day-to-day care. (The full escalate / de-escalate and "don't go public during treatment"
-plays: `../modes/next-action.md`.)
+sending an angry blast. Formal access complaints and regulators may be appropriate during treatment;
+check the local route and deadlines, the ongoing problem, and the patient's preferences. Do not
+postpone access simply to protect a relationship (`../modes/next-action.md`).
 
 ## Where this hands off
 

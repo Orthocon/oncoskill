@@ -70,9 +70,10 @@ A share pack is also defined by what you leave out. Before it goes anywhere, rem
   ID numbers, other people's details, and any metadata, QR codes, or barcodes on scans. (Full
   redaction checklist and consent/authority rules: `../../references/core/privacy.md`, and **POLICY.md
   §3**.)
-- **Anything you can't stand behind as documented.** If it's not in a signed report, it's not a fact —
-  at most it's a question. You may faithfully restate a stage or diagnosis a report *documents*; you
-  may not infer one yourself (POLICY.md, boundaries).
+- **Unlabelled claims.** Diagnosis, stage, lab values, and prescribed treatment must be attributed to
+  their records. New symptoms and events reported by the patient/caregiver also belong when relevant:
+  label them **patient-reported** or **caregiver-reported**, with date/time, separately from documented
+  findings. Do not discard an urgent symptom because it has not yet appeared in a signed report.
 
 ## A note on your role
 

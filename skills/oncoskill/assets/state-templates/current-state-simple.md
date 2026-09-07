@@ -1,6 +1,7 @@
 # Current State — what we know right now
 
-> The one place your assistant keeps track, so you never have to re-explain from scratch. **Just
+> The latest summary to give your assistant, so you have less to re-explain. The assistant needs
+> access to this file; it will say whether an update was saved or is text for you to copy. **Just
 > fill the lines that matter and leave the rest blank** — even three filled lines is enough to be
 > useful. No tables, no system to learn. Keep it wherever you already write (a note, a doc, a chat).
 >
@@ -19,8 +20,10 @@ waiting for results · after treatment_
 **The nearest thing we're working toward:** _the one concrete next thing — a scan, an appointment,
 a decision_
 
-**Medicines being taken:** _one per line — name, and what it's for if you know. Copy doses straight
-off the box or prescription; don't guess them._
+**Medicines being taken:** _one per line — name, status (active / held / stopped / as-needed),
+prescribed dose and schedule, date and source. Use the prescription/discharge instructions for the
+regimen; the box identifies the ingredient and strength, not your personal dose. If unclear, mark it
+unknown and ask the pharmacist/team._
 -
 
 **The next 1–3 things to do:** _keep it to three, so it stays doable_
@@ -42,5 +45,9 @@ can help sort it_
 -
 
 ---
-*Last updated: ___ . When something changes, just add the new line — you don't have to tidy the old
-ones.*
+*Last updated: ___ . Update the current lines when something changes; clearly mark stopped medicines
+and replaced/cancelled appointments. Keep the old information below as history, not as another current
+instruction. If sources disagree, note the conflict for the team to resolve.*
+
+**Changes:** _date — what changed — source; even one short line is enough_
+-

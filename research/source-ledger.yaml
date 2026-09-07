@@ -1,6 +1,10 @@
+# Research register, not blanket clinical verification. Legacy verified_at/confidence fields
+# record earlier research and may need passage-level rechecking. A 200 response only proves access.
+# Current scoped checks ship with the skill in references/support/verified-sources.md.
+# Do not cite a homepage or a model consensus as verification of a clinical recommendation.
 # Oncoskill source ledger
-# A formal audit of the sources behind Oncoskill: what each supports, where it lives,
-# when it was verified, and (for code/skills) whether we may reuse it and how.
+# A research register: proposed support, source locations, past check dates, and reuse notes.
+# Legacy entries do not imply a completed clinical-content audit.
 #
 # Rules embodied here:
 #   - Verify before asserting; never invent names, doses, figures, versions.
@@ -13,7 +17,7 @@
 # live page. Re-check time-sensitive items (guideline versions, contacts) before relying.
 
 meta:
-  last_updated: 2026-06-19
+  last_updated: 2026-09-07
   notes: >
     Built from three research passes + one verification pass (all 2026-06-19). Items that a
     pass could not render directly (bot-blocked) are marked confidence: medium with the reason.
@@ -533,14 +537,6 @@ supportive_care_oncall:
     confidence: low
     caveat: verify exact page before release
     verified_at: 2026-06-23
-  - id: cisplatin-cervical
-    org: eviQ / BC Cancer / Cancer Research UK
-    title: Weekly cisplatin + chemoradiation (cervical) protocols
-    url: https://www.cancerresearchuk.org/about-cancer/cervical-cancer/treatment/chemoradiotherapy/having-chemoradiotherapy
-    confirms: Weekly cisplatin needs hydration / renal & electrolyte monitoring; day-unit chemo.
-    confidence: medium
-    caveat: verify link before release; example cancer-specific
-    verified_at: 2026-06-23
 
 fertility:
   - id: asco-fertility-preservation
@@ -634,7 +630,7 @@ second_opinion_experimental:   # examples, not endorsement; eligibility/availabi
   - id: second-opinion-platforms
     org: Various
     title: Remote second-opinion services (examples)
-    url: https://www.dana-farber.org/for-patients-and-families/becoming-a-patient/second-opinions/online-second-opinions
+    url: https://www.dana-farber.org/appointments-second-opinions/second-opinion-program/get-started
     confirms: >
       Example platforms (verify each before relying): Medebound; Dana-Farber Online Second Opinion;
       Cleveland Clinic Virtual Second Opinions (formerly "MyConsult"); Mayo Clinic International;
@@ -660,3 +656,57 @@ second_opinion_experimental:   # examples, not endorsement; eligibility/availabi
     confidence: low
     caveat: tools assist research; not a substitute for guidelines or the team
     verified_at: 2026-06-23
+
+# Passage-level checks for the 0.1.1 corrections. Full scope/limits travel with the skill.
+release_0_1_1_checks:
+  - id: infection-nci-2026-check
+    url: https://www.cancer.gov/about-cancer/treatment/side-effects/infection
+    confirms: Infection symptoms require prompt contact; risk timing depends on treatment context, not a universal day.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
+  - id: anemia-acs-2026-check
+    url: https://www.cancer.org/cancer/side-effects/low-blood-counts/anemia.html
+    confirms: Anemia evaluation and treatment depend on cause; no personal iron route or Hb threshold established here.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
+  - id: food-safety-msk-2026-check
+    url: https://www.mskcc.org/cancer-care/patient-education/food-safety-during-cancer-treatment
+    source_version: Updated 2026-08-31
+    confirms: Food preparation and storage precautions; no special chemotherapy-day berry ban.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
+  - id: yogurt-msk-2026-check
+    url: https://www.mskcc.org/experience/patient-support/nutrition-cancer/diet-plans-cancer/neutropenic-diet
+    confirms: Commercial pasteurized yogurt with live cultures is included; probiotic supplements are separate.
+    caveat: Same institution as the food-safety source, not independent confirmation.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
+  - id: supplements-nci-2026-check
+    url: https://www.cancer.gov/about-cancer/treatment/cam/diets-supplements
+    source_version: Posted 2024-10-30
+    confirms: Some supplements can affect treatment; check exact products with the team.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
+  - id: timing-nci-2026-check
+    url: https://www.cancer.gov/about-cancer/treatment/questions
+    source_version: Updated 2023-02-22
+    confirms: Ask when treatment needs to start; does not establish a safe delay.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
+  - id: second-opinion-nci-2026-check
+    url: https://www.cancer.gov/about-cancer/managing-care/finding-cancer-care
+    source_version: Updated 2024-08-28
+    confirms: Second-opinion and specialist review; prepare relevant records.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
+  - id: dana-farber-link-2026-check
+    url: https://www.dana-farber.org/appointments-second-opinions/second-opinion-program/get-started
+    confirms: Correct destination for the online second-opinion service.
+    caveat: Availability, cost, eligibility and turnaround require case-specific checking.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
+  - id: caregiver-acs-link-2026-check
+    url: https://www.cancer.org/cancer/caregivers/taking-care-of-yourself/self-care-tips.html
+    confirms: Correct destination for caregiver self-care tips.
+    verified_at: 2026-09-07
+    review_due: 2027-03-07
