@@ -14,25 +14,28 @@ is always the team's call, confirmed against the registry. Sources are audited i
 - **NCI — Find a Clinical Trial** — cancer-specific, NCI-supported trials.
   `https://www.cancer.gov/research/participate/clinical-trials-search`
 
+ClinicalTrials.gov and EU CTIS cover **every condition**, not only cancer. For rare diseases, the
+relevant European Reference Network (ERN) and Orphanet are good places to find who runs studies.
+
 If a web/search tool is available you can look these up live; otherwise reason from what the user
 has and point them to the registry to confirm. Either way, verify trial details against the registry
 record before presenting them — listings change, and a trial can close to recruitment overnight.
 
-## Walking a trial from "found it" to "a question for the oncologist"
+## Walking a trial from "found it" to "a question for the treating specialist"
 
 Finding a trial is the easy part; working out whether it's even worth raising is the real job. The aim
 isn't to judge eligibility — it's to gather enough that the user can have an informed conversation
 with their team, and to be honest about everything you can't see. A calm way through it:
 
-- **The cancer, exactly.** Type and histology as the report actually documents it (you may restate
+- **The condition, exactly.** Type (for cancer, histology) as the report actually documents it (you may restate
   what a signed report says — you can't infer it; see `../../POLICY.md` and `../modes/explain.md`). Many
-  trials are narrower than the cancer's common name.
+  trials are narrower than the condition's common name.
 - **Stage and current status** — newly diagnosed, on treatment, recurrent, metastatic. Trials usually
   target one specific situation, and the documented stage is what matters here, not a guess.
 - **What treatment has already happened.** Prior lines of therapy, surgery, radiation — many trials
   require, or exclude, specific prior treatment.
 - **Required biomarkers.** Does the trial need a particular marker (and reported with the right assay
-  and scoring)? If that test hasn't been done, that's its own action — see `pathology-biomarkers.md`.
+  and scoring)? If that test hasn't been done, that's its own action — see `../packs/oncology/pathology-biomarkers.md`.
 - **Performance status and general fitness** — trials often set a threshold; this is the team's
   assessment, not something to self-score.
 - **Geography and logistics** — where the site is, whether travel/stay is feasible, whether it takes
@@ -49,7 +52,7 @@ with their team, and to be honest about everything you can't see. A calm way thr
   directly. Treat trial outreach like any other channel: `../modes/next-action.md`.
 - **What to send if they make contact** — usually a short de-identified case summary, not the full
   records. Privacy first: `../core/privacy.md`, and the share-pack in `../../assets/share-pack/`.
-- **The question for the oncologist** — the point of all of this. Something like: *"I found a trial,
+- **The question for the treating specialist** — the point of all of this. Something like: *"I found a trial,
   [ID/name], for [situation] — does it look like it could fit me, and is it worth me contacting the
   site, or would you?"* Surfacing an option and preparing the question, not steering the decision.
 

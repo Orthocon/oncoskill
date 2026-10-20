@@ -35,7 +35,7 @@ override the treating team. (Tone: `../core/tone.md`. Sources are audited in the
   to talk to someone now, short of a 112-level emergency.
 
 For *which kind* of help fits the person's state (and the caregiver's own, separate need for support),
-hand off to `../modes/patient-mental-health.md`, `../modes/caregiver.md`, and `psycho-onc.md`. The
+hand off to `../modes/patient-mental-health.md`, `../modes/caregiver.md`, and `../packs/oncology/psycho-onc.md`. The
 posture is the same everywhere: routing and psychoeducation, never therapy-instead-of-therapy.
 
 ## Social and practical support
@@ -61,7 +61,7 @@ posture is the same everywhere: routing and psychoeducation, never therapy-inste
   **verify the current number before release.**
 
 When something looks like a red flag, the move is always to route to the team or emergency, calmly and
-clearly — see `../modes/on-treatment.md` and `../core/safety.md` for what not to normalise.
+clearly — see `../packs/oncology/on-treatment.md` and `../core/safety.md` for what not to normalise.
 
 ## Key Portuguese terms — a navigation aid
 

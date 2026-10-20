@@ -2,9 +2,9 @@
 
 Help a patient/caregiver move the *physical specimen* and its tests through the system — the part that
 quietly stalls cases — and prepare the right questions, never to interpret the slides or call a test
-result yourself. Draft-only; the team decides. (Binding rules: `../../POLICY.md`.)
+result yourself. Draft-only; the team decides. (Binding rules: `../../../POLICY.md`.)
 
-*Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `../core/adapt-to-context.md`).*
+*Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `../../core/adapt-to-context.md`).*
 
 ## The thing almost everyone misses: the bottleneck is usually the specimen, not the test
 
@@ -14,7 +14,7 @@ slides from it, whether anyone has actually requested it move, and whether enoug
 A test ordered against a specimen that nobody has shipped just waits. This is a classic seam where two
 centres each assume the other is handling it, so it's worth treating the specimen as something *you*
 track until it's confirmed where it is and where it's going. (The "centres don't talk to each other"
-assumption from `../modes/next-action.md` applies in full here.)
+assumption from `../../modes/next-action.md` applies in full here.)
 
 This is also exactly where the advocate role bites gently. A good lab and a good team can still let a
 block sit for weeks because no single person owns moving it. You don't need to fight anyone — just ask,
@@ -40,13 +40,13 @@ new tracker. Offer to update Current State as answers come in.
   guaranteed.
 - **Chain of custody** — who is shipping, how, tracking, who confirms receipt at the other end. "We'll
   send it over" is not confirmation; a logged hand-off is. (Records/specimen-request mechanics:
-  `authorised-representative.md`.)
+  `../../support/authorised-representative.md`.)
 - **What the report actually states** — whether it names the **clone/antibody, the platform/assay, and
   the scoring system** used, not just a positive/negative. A result without its method is hard to
   compare or act on (see PD-L1 note below).
 - **Turnaround, cost and coverage** — how long the test takes, what it costs, and whether it's covered
   or self-pay. If it's self-pay or sent to a private/overseas lab, the funding route belongs in
-  `financial-insurance.md` and `eu-crossborder.md`.
+  `../../support/financial-insurance.md` and `../../support/eu-crossborder.md`.
 - **Consent for genomic testing.** Broader tumour-genomic / germline sequencing usually needs explicit
   consent, and germline findings can carry family implications — flag it as a consent conversation with
   the team and, where relevant, a genetic counsellor, not a box to tick blindly.
@@ -81,7 +81,7 @@ specimen on a narrow test is a real consideration — as a question to raise, no
 If testing is being sent out — to a reference, private, or overseas lab — the question isn't "is this a
 good lab" in the abstract but whether it actually runs the *specific* assay you need, validated and
 reportable for clinical use (not research-only or a marketing line). That's the **technical-capability
-audit** in `../modes/research.md` — ask for the exact assay, clone/platform, scoring, accreditation,
+audit** in `../../modes/research.md` — ask for the exact assay, clone/platform, scoring, accreditation,
 turnaround and how the report comes back, and route the question to the right department (pathology /
 molecular pathology / the lab's clinical-liaison). Don't accept "yes we do genomic testing" as the
 answer to "do you run *this* panel, reported this way."
@@ -91,21 +91,21 @@ answer to "do you run *this* panel, reported this way."
 This module helps you *move and document* tissue and *prepare questions* about tests. It does not
 interpret a pathology report, score a stain, call a biomarker positive or negative, or decide which
 test you need — those are the pathologist's and oncologist's calls. If you want help understanding the
-plain-language meaning of a report you already have, that's `../modes/explain.md` (which keeps the rule:
+plain-language meaning of a report you already have, that's `../../modes/explain.md` (which keeps the rule:
 faithfully restate what a signed report documents, never independently infer a diagnosis or stage).
 
 ## Hand-offs
 
 - **Letters** (`../../assets/letters/`) — skeletons for a pathology block/slides request, a DICOM/
   imaging request, and a medical-summary request, so the specimen and reports actually move.
-- **`../modes/research.md`** — the technical-capability audit for vetting a lab's exact assay.
-- **`authorised-representative.md`** — records- and specimen-request workflow when a centre will only
+- **`../../modes/research.md`** — the technical-capability audit for vetting a lab's exact assay.
+- **`../../support/authorised-representative.md`** — records- and specimen-request workflow when a centre will only
   release to the patient or won't release at all; a non-response is itself an event to log.
-- **`financial-insurance.md`** / **`eu-crossborder.md`** — funding and coverage when a test is self-pay
+- **`../../support/financial-insurance.md`** / **`../../support/eu-crossborder.md`** — funding and coverage when a test is self-pay
   or sent abroad.
-- **`../modes/next-action.md`** — to put "confirm where the block is and who's moving it" on the action
+- **`../../modes/next-action.md`** — to put "confirm where the block is and who's moving it" on the action
   list with an owner and a date.
 
 **Guardrails:** no interpretation of slides or results; genomic testing needs proper consent (and
 sometimes genetic counselling); state turnaround/cost/coverage as examples to confirm locally; record
-findings in the relevant section of Current State, not a new ledger (`../../POLICY.md`).
+findings in the relevant section of Current State, not a new ledger (`../../../POLICY.md`).

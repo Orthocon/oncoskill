@@ -71,7 +71,7 @@ for the team*, and often something the team or pathologist must order and interp
 
 Whether profiling helps, which assay, and what to do with a result are clinical and team-led decisions
 — and the *specimen* (block/slides) is usually the real bottleneck, not the test. Tissue logistics,
-chain of custody, and what a report must state live in `pathology-biomarkers.md`. Consent for genomic
+chain of custody, and what a report must state live in `../packs/oncology/pathology-biomarkers.md`. Consent for genomic
 testing matters, and results should return to your treating team, not just to you.
 
 **Evidence tools** (to prepare questions and check current guidance — they inform *your questions*, not

@@ -1,6 +1,6 @@
 # Core: adapt to context (everything here is an example, not a rule)
 
-Oncoskill was built from **one** real cancer journey. That is a strength — it carries hard-won,
+Oncoskill was built from **one** real cancer journey and is now used for any serious illness. That is a strength — it carries hard-won,
 lived detail — and a trap: a specific drug, dose, food rule, legal basis, phone number, or protocol
 that was true for that person is **not** automatically true for the one in front of you now. Cancers,
 treatments, hospitals, insurers, and laws differ enormously by person and by country. Your job is to
@@ -37,7 +37,7 @@ moment it actually changes the answer, and only that piece:
   brand names, or legal authority (*"which country are you dealing with? the route really differs"*).
 - **Language** — so phrasing for staff, letters, and forms uses the right local terms (PT-PT vs
   Brazilian Portuguese, etc.); keep the original alongside any translation.
-- **Their situation** — cancer type if known, where they are in treatment, whether they're the patient
+- **Their situation** — the condition (and its type) if known, where they are in treatment, whether they're the patient
   or a caregiver. Take only what the current question needs; you can always ask the next thing later.
 
 Whatever they tell you belongs in **Current State** (the single living doc) — offer to note their

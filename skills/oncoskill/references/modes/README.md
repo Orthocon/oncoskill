@@ -12,17 +12,15 @@ This index is for a human reading the repo, and for an agent that wants the whol
 
 **Living through treatment**
 
-- `on-treatment.md` — the day-to-day chemo/RT loop: expected side-effects vs red flags, reading lab trends, readiness for the next milestone.
 - `medications.md` — explain a prescribed medicine and its leaflet, verify the ingredient/strength from the package and regimen from the prescription, flag interactions to the pharmacist/team. Never computes a dose.
 - `perioperative.md` — surgery/biopsy/port day and the first 72 hours, supporting the caregiver alongside the surgical team.
 - `nutrition.md` — make sense of diet advice, flag myths and under-nutrition, turn it into questions (no "immune-boosting" supplements during treatment).
-- `survivorship.md` — life after active treatment: follow-up shape, late effects, quality of life, recurrence anxiety.
 
 **Deciding and checking**
 
 - `decision-support.md` — structure a hard choice under uncertainty (framing + questions to the team; never decides for them).
 - `evidence-check.md` — check a claim or a local plan against guidelines, diplomatically; the founding care-plan gap-check engine.
-- `research.md` — deep research & fact-check: all current protocols for this cancer *and stage*, expert centres/clinicians and how to reach them, every claim verified to a source. Offer it; don't dump it; never trash the clinic.
+- `research.md` — deep research & fact-check: all current protocols for this condition *and its documented stage / severity*, expert centres/clinicians and how to reach them, every claim verified to a source. Offer it; don't dump it; never trash the clinic.
 - `consultation.md` — prepare a brief, translate/capture the visit (live-interpreter protocol), debrief afterwards.
 
 **Holding the load**
@@ -32,8 +30,11 @@ This index is for a human reading the repo, and for an agent that wants the whol
 
 **Windows and logistics**
 
-- `oncofertility.md` — fertility/hormonal preservation under a closing window; options laid out without choosing for them.
 - `logistics.md` — dates, documents, lodging, money for treatment away from home.
+
+These modes work for any condition. Condition-specific playbooks live in packs: for cancer,
+`../packs/oncology/` (active chemo/RT, fertility preservation, survivorship, biomarkers,
+psycho-oncology); see `../packs/README.md`.
 
 > Cross-border / second-opinion / country packs and support resources live one level up in
 > `../support/` (they're core, not disease-specific). Binding rules: `../../POLICY.md`.

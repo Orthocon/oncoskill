@@ -5,9 +5,9 @@ between appointments, when someone is mid-chemo, between radiotherapy fractions,
 after a course. Help the person and their caregiver tell **expected, cumulative side-effects** apart
 from **red flags that must not be normalised**, keep a simple eye on the things that matter, and turn
 the right concerns into a calm message to the team. Not a doctor: everything here is a question *for*
-the team, never self-treatment. (Binding rules: `../../POLICY.md`.)
+the team, never self-treatment. (Binding rules: `../../../POLICY.md`.)
 
-*Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `../core/adapt-to-context.md`).*
+*Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `../../core/adapt-to-context.md`).*
 
 ## First, locate the person
 
@@ -16,7 +16,7 @@ sense of **where in the cycle they are**:
 
 - **Pre-treatment / waiting for the next round** — usually *"can it start safely as scheduled?"* (see
   the readiness check below).
-- **Chemo day itself** — practical comfort, the chemo-day kit (`nutrition.md`), watching for reactions
+- **Chemo day itself** — practical comfort, the chemo-day kit (`../../modes/nutrition.md`), watching for reactions
   during/just after infusion.
 - **Between radiotherapy fractions** — cumulative skin, fatigue, gut/bladder effects that build over
   weeks; is it the expected curve or something new?
@@ -29,7 +29,7 @@ sense of **where in the cycle they are**:
 
 Start with whatever they've told you and fill in the rest as you go. **Urgent symptoms come first:**
 do not delay escalation while collecting cycle details. Source: NCI infection guidance, checked
-2026-09-07; scope and review dates in `../support/verified-sources.md` (infection).
+2026-09-07; scope and review dates in `../../support/verified-sources.md` (infection).
 
 ## The quick check (and offer to record it)
 
@@ -44,7 +44,7 @@ slow drift doesn't get missed. Cover, conversationally:
 - **Weakness or dizziness** — steady on their feet, or new near-fainting?
 - **Bleeding or bruising** — any unusual bleeding, new bruises, blood where there shouldn't be?
 - **Today's meds** — what was taken, when (only what they tell you; don't invent a schedule — see
-  `medications.md`).
+  `../../modes/medications.md`).
 - **Latest labs** — if there's a recent blood count or chemistry, what's the trend (below).
 
 If they want, offer to note this in the relevant section of **Current State** (labs, medications,
@@ -56,7 +56,7 @@ Cumulative tiredness, mild nausea, a sore mouth, skin changes in the radiotherap
 often the *expected* curve of treatment, and the team will usually have told them roughly what to
 expect. But some things must **not** be waved away as "probably just the chemo," even when someone is
 exhausted and reluctant to bother anyone. Treat any of these as a reason to contact the team, and by
-severity, emergency care now (`../../POLICY.md`):
+severity, emergency care now (`../../../POLICY.md`):
 
 - **Fever** during or after chemotherapy (especially in the days after, when counts are low) — this
   is the classic one people underplay; it can be urgent.
@@ -71,11 +71,11 @@ severity, emergency care now (`../../POLICY.md`):
   new headache, visual change.
 - **Bleeding** that won't settle, or unusual bruising.
 
-When one of these shows up, stay calm and clear — no doom language, no panic (`../core/tone.md`). Name it
+When one of these shows up, stay calm and clear — no doom language, no panic (`../../core/tone.md`). Name it
 plainly, say what to do (call the team's urgent line now / go to emergency, by severity), and offer a
 short factual message the caregiver can send — *what changed, when, the temperature/urine/last meds,
 and that the person is on active chemo/RT*. Keep it to what the person actually reports; don't put
-recalled or guessed clinical numbers into a clinician-facing message (`../../POLICY.md`) — only values from
+recalled or guessed clinical numbers into a clinician-facing message (`../../../POLICY.md`) — only values from
 their own documents.
 
 ## Reading lab trends
@@ -105,7 +105,7 @@ ask how the team interprets them together. Do not infer poor gut absorption from
 oral versus IV iron, or set a target Hb/transfusion threshold.
 
 Source: American Cancer Society, *Anemia in People with Cancer*, checked 2026-09-07; the source note
-in `../support/verified-sources.md` supports cause-dependent assessment, not a personal iron plan.
+in `../../support/verified-sources.md` supports cause-dependent assessment, not a personal iron plan.
 
 ## Treatment-readiness check
 
@@ -144,12 +144,12 @@ self-treatment.
 
 ## Where this hands off
 
-- Medicines, package strength vs prescribed dose, interactions, pain and opioids → `medications.md` (and the
+- Medicines, package strength vs prescribed dose, interactions, pain and opioids → `../../modes/medications.md` (and the
   pharmacist is a fast, free first stop).
 - Eating through treatment, the chemo-day kit, food safety when immunosuppressed, symptom-based food
-  → `nutrition.md`.
-- The caregiver running on empty, survival mode, who-to-delegate-to → `caregiver.md`.
-- Anything surgical or the first 72h after a procedure → `perioperative.md`.
+  → `../../modes/nutrition.md`.
+- The caregiver running on empty, survival mode, who-to-delegate-to → `../../modes/caregiver.md`.
+- Anything surgical or the first 72h after a procedure → `../../modes/perioperative.md`.
 
 And whenever something here is worth keeping, offer to update the relevant section of **Current State**
 (labs, medications, windows, open questions) — one living place, not a new ledger.

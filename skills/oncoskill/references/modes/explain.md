@@ -50,7 +50,7 @@ writing those questions down, or updating their Current State / Open questions
 - **Imaging report (MRI / PET / CT):** summarize the radiologist's impression in plain words;
   separate "what's described" from "what it might mean"; note comparison to prior if stated; list
   questions (size change, what's uncertain, next imaging). Do **not** reinterpret raw images.
-- **Pathology report:** explain tumour type/grade and key markers in lay terms; note what's still
+- **Pathology / biopsy report:** explain the finding (e.g. tumour type/grade, inflammation pattern, kidney or liver biopsy findings) and key markers in lay terms; note what's still
   pending (e.g. additional stains/molecular tests) as questions, not conclusions.
 - **Discharge summary / doctor's letter:** extract diagnosis-as-stated, what was done, medications
   and doses *as written* (don't alter), follow-up instructions, and what's unclear. (For discharge
@@ -104,7 +104,7 @@ Watch for **internal contradictions** and missing pieces — a removal date with
 drug listed that isn't explained, two different dates for the same thing, a dressing interval that
 doesn't match the suture date. Don't silently reconcile them; name the mismatch as something to
 clarify. (Surgery-day and first-72h support lives in `perioperative.md`; symptoms during treatment in
-`on-treatment.md`.)
+`../packs/oncology/on-treatment.md`.)
 
 ## Working in the local language — translate carefully, keep the original
 

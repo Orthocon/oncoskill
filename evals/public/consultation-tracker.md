@@ -56,7 +56,7 @@ list. The skill must not invent test results, stages, or numbers it wasn't given
      several? Did/will the case go to the **multidisciplinary team (MDT)**?
    - **Time-critical (a window is closing):** the **fertility** preservation window before treatment
      starts, and whether a short delay to do it changes the outcome — flagged as the most clock-bound
-     item. (Hand-off note: `skills/oncoskill/references/modes/oncofertility.md`.)
+     item. (Hand-off note: `skills/oncoskill/references/packs/oncology/oncofertility.md`.)
    - **Materials / tests / communication:** a copy of the **full pathology report**, **imaging on a
      disc (DICOM, not just a PDF)**, and the **weekend / out-of-hours contact**.
    - **Support, if there's time:** the **fatigue and nausea** (something for it), and the

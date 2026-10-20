@@ -2,6 +2,16 @@
 
 All notable changes to the `oncoskill` skill. Versioning is informal during v0.
 
+## [0.2.0] — 2026-10-20
+
+- Generic core for any serious or complex illness, not only cancer. The skill description, role
+  files, safety red flags, source hierarchy, research and trial workflows now speak of "the
+  condition" and name guideline bodies per specialty (ESC, EAN, EULAR, KDIGO, ERNs and others).
+- Oncology-only playbooks moved into a condition pack, `references/packs/oncology/`: active chemo/RT,
+  fertility preservation, survivorship, pathology & biomarkers, psycho-oncology. All links updated.
+- Added general carer and rare-disease resources, a scope note on the oncology-only checked sources,
+  guidance for conditions without a pack, and a non-oncology regression scenario.
+
 ## [0.1.1] — 2026-09-07
 
 - Incorporated the prepared public-example privacy cleanup; corrected PDF/QR redaction and the

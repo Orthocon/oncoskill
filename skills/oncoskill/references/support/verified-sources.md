@@ -10,6 +10,11 @@ deadline, not the publisher's schedule or a guarantee of currency. Check sooner 
 case-specific decision. These patient-facing sources support explanations and questions, not doses,
 regimen selection, or permission to delay care. No source text is reproduced here.
 
+**Scope:** every note below comes from oncology sources (infection during cancer treatment, anaemia,
+food safety, supplements, questions to ask, finding care). For other conditions there are no bundled
+checked passages yet: rely on the person's own documents and team, or a live check of the relevant
+specialty society (`../core/source-hierarchy.md`), and say so.
+
 ## Infection
 
 - **Source:** [NCI — Infection and Neutropenia during Cancer Treatment](https://www.cancer.gov/about-cancer/treatment/side-effects/infection).

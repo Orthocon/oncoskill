@@ -6,8 +6,8 @@ project.
 
 ## Intended purpose
 
-Oncoskill is an **information, organization, and preparation aid** for cancer patients and their
-caregivers. Its intended purpose is to help a person:
+Oncoskill is an **information, organization, and preparation aid** for patients with a serious or
+complex illness (cancer included) and their caregivers. Its intended purpose is to help a person:
 
 - understand medical documents written for clinicians, in plain language;
 - organize a fragmented paper trail into a clear picture;

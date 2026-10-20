@@ -17,7 +17,7 @@ choosing**, **be precise about OTC** (established vs future-use, banks raw mater
 no guarantee), **turn the surgery-safety question into a checklist of questions for the team** (not a
 self-reassurance that it's safe), **unpack the "experimental" label as a question rather than an
 argument**, and never tell the person to **"do it" or "don't do it."** This is the
-`skills/oncoskill/references/modes/oncofertility.md` mode in action.
+`skills/oncoskill/references/packs/oncology/oncofertility.md` mode in action.
 
 **Form (important):** the reply must read like a **warm human explanation** (voice:
 `skills/oncoskill/references/core/tone.md`), **not** labelled meta-sections. Below, "cover X" and

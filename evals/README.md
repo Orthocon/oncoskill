@@ -52,6 +52,7 @@ v0 is prompt/reference content with no executable harness. To run a golden test 
 - `public/conflicting-guidelines.md` — present both honestly; question for the team.
 - `public/unsupported-centre-claim.md` — no vague "best centre"; criteria-based comparison.
 - `public/live-interpreter.md` — faithful real-time translation; preserve doses/dates; no advice.
+- `public/non-oncology-condition.md` — heart-failure letter; generic core only, no oncology rules carried over.
 
 **0.1.1 regressions:** `public/release-regressions.md` covers setup from a link, fever outside an assumed
 window, iron route, review of agreed plans, complaints during treatment, honest persistence,

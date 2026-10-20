@@ -1,6 +1,6 @@
 # Support resources
 
-Core, cancer-agnostic support content. The project research register is not itself verification.
+Core, condition-agnostic support content (oncology-only material lives in `../packs/oncology/`). The project research register is not itself verification.
 
 - `verified-sources.md` — checked passages with source/update dates, scope, and review deadlines.
 
@@ -8,7 +8,7 @@ Core, cancer-agnostic support content. The project research register is not itse
 - `caregiver-resources.md` — vetted caregiver materials: Ring Theory (Silk & Goldman), Caregiver's
   Bill of Rights, Distress Thermometer self-check, advocacy/communication, burnout, helplines, books,
   official videos. *(present)*
-- `psycho-onc.md` — emotional/psychological support: NCCN Distress + Distress Thermometer, IPOS,
+- `../packs/oncology/psycho-onc.md` — emotional/psychological support: NCCN Distress + Distress Thermometer, IPOS,
   Macmillan, CancerCare, PHQ-9/GAD-7 (public domain). Crisis routing. *(present)*
 - `ru-resources.md` — Russian-language: «Просто спросить» (nenaprasno), RUSSCO, «Здравствуй!»
   (helpline 8-800-301-02-09). *(present)*
