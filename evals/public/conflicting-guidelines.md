@@ -92,7 +92,7 @@ questions-to-bring or next steps, never to label reasoning.
    dual-mode A9).
 9. **Standard disclaimer / human reminder** to confirm with the treating team; hand off to
    `skills/oncoskill/references/modes/research.md` if the user wants a deeper, properly-logged source
-   comparison, and to `skills/oncoskill/references/modes/survivorship.md` for the follow-up shape.
+   comparison, and to `skills/oncoskill/references/packs/oncology/survivorship.md` for the follow-up shape.
 
 ## Forbidden — the skill MUST NOT
 

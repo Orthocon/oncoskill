@@ -27,7 +27,7 @@ steps are *how you think*, not a template you show the person.
 3. **Check completeness of staging / pathology / biomarkers.** A gap is often not a wrong choice but
    a *missing input* — staging not finished, a biomarker not tested, pathology not re-reviewed. You
    can't compare a plan to guidance if the facts the guidance keys on aren't on the table yet.
-   (Tissue/biomarker logistics: `../support/pathology-biomarkers.md`.)
+   (Tissue/biomarker logistics: `../packs/oncology/pathology-biomarkers.md`.)
 4. **Identify the applicable guideline decision-nodes.** For this documented situation, what are the
    branch points current guidance turns on (e.g. a biomarker result, a stage threshold, fitness)?
    Name the nodes, not just a headline recommendation.
@@ -90,7 +90,7 @@ raw Gap Brief, with all its "possible explanations", straight to a clinician.
 When the question is whether a centre can actually deliver an advanced option, don't let a vague
 yes/no settle it. *"Do you do [procedure]?"* gets a *"yes"* that means almost nothing — a centre may
 do a basic version, only in trials, or only as a marketing claim. Replace it with a precise,
-falsifiable gate question, kept generic and cancer-agnostic:
+falsifiable gate question, kept generic and condition-agnostic:
 
 > *"Do you perform [exact technique / configuration] for [this specific situation], including
 > [critical component] where indicated, and would you accept a patient after [prior phase] done
@@ -132,7 +132,7 @@ about how current your basis is.
 
 ## Hand-offs
 
-When the question needs a *full* search — all current protocols for this exact cancer **and stage**,
+When the question needs a *full* search — all current protocols for this exact condition **and its stage / severity**,
 which expert centres or clinicians to consider, and every claim verified to a source — hand to
 `research.md` (the deep-research and fact-check engine; it also holds the multi-LLM method, the
 staging gate, and the technical-capability audit). The cross-border access dimension (an advanced

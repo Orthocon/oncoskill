@@ -5,9 +5,9 @@ own. Different states need different *kinds* of help, and naming the right one �
 to deliver it — is most of what's actually useful here. This file helps the agent screen how intense
 things are, then point to the approach that fits the moment. It is about *which method, for which
 state* — for *where to find* support (lines, services, contacts) hand off to `psycho-onc.md`,
-`caregiver-resources.md`, and `ru-resources.md`. (Voice: `../core/tone.md`.)
+`../../support/caregiver-resources.md`, and `../../support/ru-resources.md`. (Voice: `../../core/tone.md`.)
 
-*Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `../core/adapt-to-context.md`).*
+*Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `../../core/adapt-to-context.md`).*
 
 ## First: how intense is it, and is anyone in danger?
 
@@ -23,7 +23,7 @@ as an intake form.
 - **Any sign of self-harm, suicidal thinking, or not feeling safe → that comes first, before
   anything else on this page.** Route to the local emergency number or a crisis line *now*, stay with
   the conversation, and don't move on to method-matching. (Crisis routing detail and numbers:
-  `../modes/caregiver.md` and `psycho-onc.md`; a country example with local lines: `portugal.md`.)
+  `../../modes/caregiver.md` and `psycho-onc.md`; a country example with local lines: `../../support/portugal.md`.)
 
 Screening is orientation, not labelling. The goal is to get the person to the right help sooner, not
 to score them.
@@ -46,7 +46,7 @@ tends to fit this — want help finding someone who does it?", never as a diagno
   feelings** → **problem-solving therapy** tends to fit, because the relief comes from breaking an
   overwhelming tangle into workable steps. (Its strongest trial evidence is in *patients*; for a
   caregiver it's a sensible match, not a guaranteed fix — and it often pairs with practical help: the
-  operational load itself can be lightened — see `../modes/next-action.md` and `financial-insurance.md`.)
+  operational load itself can be lightened — see `../../modes/next-action.md` and `../../support/financial-insurance.md`.)
 - **Early days, newly diagnosed, disoriented, "I don't even know what's happening"** →
   **psychoeducation plus supportive listening** is usually what's needed first: understanding the
   situation and feeling heard, before any structured therapy.
@@ -62,7 +62,7 @@ When several seem to fit, say so honestly and let the person choose — the "rig
 they'll actually engage with. And it's fine not to know: when in doubt, the safe route is a
 psycho-oncologist or counsellor who can assess properly. (Which *type* of professional — psycho-
 oncologist vs psychiatrist vs counsellor — and the patient's own emotional terrain live in
-`../modes/patient-mental-health.md`.)
+`../../modes/patient-mental-health.md`.)
 
 ## The caregiver needs their own support — separately
 
@@ -72,7 +72,7 @@ sleep and constant fear is carrying a real load, and "I'm fine, focus on them" i
 talking, not the truth. The same screen and the same method-matching above apply to *them*. Dark or
 ambivalent thoughts under extreme, sleepless stress are common and are not the same as intent —
 feelings are not actions, and nothing should be acted on at 3 a.m. un-slept. (Caregiver survival,
-acute-hospital mode, and their own professional support: `../modes/caregiver.md`.)
+acute-hospital mode, and their own professional support: `../../modes/caregiver.md`.)
 
 ## Asking the network for help — functions, not vague support
 
@@ -99,17 +99,17 @@ One ask, one person, one time-box. As a light frame for *who* to lean on, **Ring
 support flows inward toward the person most affected, and you vent outward, not in. Use it as an
 optional heuristic, not a rule to police; the point is simply that the people closer to the crisis get
 held up, not asked to hold others up. (Hands-on caregiver delegation scripts and the task menu in
-context: `../modes/caregiver.md`; ready-to-send messages: `../../assets/scripts/`.)
+context: `../../modes/caregiver.md`; ready-to-send messages: `../../assets/scripts/`.)
 
 ## Where this hands off
 
 - **Where to actually find support** — services, lines, contacts: `psycho-onc.md`,
-  `caregiver-resources.md`, `ru-resources.md`, and the country example in `portugal.md`.
+  `../../support/caregiver-resources.md`, `../../support/ru-resources.md`, and the country example in `../../support/portugal.md`.
 - **The patient's own emotional ground** — denial, self-blame, information hygiene, which professional:
-  `../modes/patient-mental-health.md`.
-- **The caregiver's survival and crisis routing**: `../modes/caregiver.md`.
-- **When the distress is really an operational load** to lighten: `../modes/next-action.md`,
-  `financial-insurance.md`.
+  `../../modes/patient-mental-health.md`.
+- **The caregiver's survival and crisis routing**: `../../modes/caregiver.md`.
+- **When the distress is really an operational load** to lighten: `../../modes/next-action.md`,
+  `../../support/financial-insurance.md`.
 
 A natural way to close with someone: name the kind of help that fits, offer to help them find a person
 who does it, and — if the weight is coming partly from logistics — offer to take one practical thing

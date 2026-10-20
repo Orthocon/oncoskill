@@ -96,7 +96,7 @@ Sharing someone's medical data is an act of consent, and consent belongs to the 
 - **Other people's data is not yours to share.** If a family member, a shared report, or a third party
   appears in a document, that's a redaction item, not something to pass along.
 - **Get consent for genomic / biomarker testing and for onward sharing of those results** as its own
-  step — it carries family implications. Detail lives in `../support/pathology-biomarkers.md`.
+  step — it carries family implications. Detail lives in `../packs/oncology/pathology-biomarkers.md`.
 
 ## What stays private vs what is doctor-facing
 
@@ -131,5 +131,5 @@ the name taken off. Raw documents stay with the person they belong to.
 When the immediate sharing question is handled, hand off where it goes next: building the clean outward
 dossier (`../../assets/share-pack/`), the outreach and link mechanics (`../modes/next-action.md`),
 formal authorisation to act for the patient (`../support/authorised-representative.md`), and
-biomarker/genomic consent specifics (`../support/pathology-biomarkers.md`). Binding rules throughout:
+biomarker/genomic consent specifics (`../packs/oncology/pathology-biomarkers.md`). Binding rules throughout:
 `../../POLICY.md` §3.

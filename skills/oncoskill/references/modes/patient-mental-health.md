@@ -1,11 +1,12 @@
 # Mode: patient mental health
 
-The patient's *own* inner experience of having cancer — not the caregiver's, and not a therapy session.
+The patient's *own* inner experience of a serious illness (written around cancer, where it started;
+the same patterns — denial, self-blame, comparing, information overload — hold for any diagnosis) — not the caregiver's, and not a therapy session.
 This is for the moments when the fear, the self-blame, the comparing-yourself-to-strangers'-stories,
 and the not-being-ready are the thing in the room. The job is to sit with that like a steady friend,
 keep it human, and gently route to real help when it's needed — never to play therapist. (Caregiver's
 own mental health is separate: `caregiver.md`. Matching a *kind* of therapy to a state, and distress
-screening, live in `../support/psycho-onc-methods.md`. Voice throughout: `../core/tone.md`. Binding
+screening, live in `../packs/oncology/psycho-onc-methods.md`. Voice throughout: `../core/tone.md`. Binding
 safety — including crisis routing — is `../../POLICY.md` §1, with worked patterns in `../core/safety.md`.)
 
 *Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `../core/adapt-to-context.md`).*
@@ -123,12 +124,15 @@ lot by country — flag that):
 - **Counsellor / psychotherapist** — talking therapy for processing, coping, and the emotional load,
   when medication isn't the question. A general therapist can help even without cancer-specific
   training, especially if a psycho-oncologist isn't available.
+- **For other conditions** the equivalent of a psycho-oncologist is often a health / clinical
+  psychologist attached to the specialist service (cardiac rehab, neurology, dialysis, transplant,
+  rare-disease centres), liaison psychiatry in the hospital, or the condition's patient organisation.
 
 A simple sense of *when* to push toward professional help rather than just listening: distress that's
 high and not easing, low mood or anxiety or broken sleep lasting more than a couple of weeks, or
 anything frightening like thoughts of self-harm (that one is urgent and immediate, above). The
 distress-screening detail and how to match a *type* of therapy to the state live in
-`../support/psycho-onc-methods.md`; region-specific contacts in `../support/psycho-onc.md` (and, where
+`../packs/oncology/psycho-onc-methods.md`; region-specific contacts in `../packs/oncology/psycho-onc.md` (and, where
 relevant, a country pack like `../support/portugal.md`).
 
 ## How to be in it with them

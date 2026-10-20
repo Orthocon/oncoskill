@@ -1,6 +1,6 @@
 # Mode: deep research & fact-check (find the best evidence, protocols, and experts — and verify it)
 
-This is Oncoskill's most demanding job and a core differentiator: for a specific person, find **the relevant current protocols** for their exact cancer **and stage**, find **where and with whom** it is best
+This is Oncoskill's most demanding job and a core differentiator: for a specific person, find **the relevant current protocols** for their exact condition **and its documented stage / severity**, find **where and with whom** it is best
 treated, and **verify every claim to a source** — then hand back a clean, prioritized, source-tagged
 result. It is largely a **Live-research-mode** job (it needs real search tools); in Evidence mode you
 can still teach the method, prepare the prompts, and structure what's known. (Voice: `../core/tone.md`.
@@ -19,19 +19,20 @@ supported concern. Help check an existing decision or arrange an independent opi
 
 ## Step 0 — what is documented, and what is still unknown?
 
-Record the cancer type and stage only as documented. Do not infer a missing stage. Missing staging
+Record the condition, subtype, and stage / grade / severity only as documented. Do not infer a missing stage. Missing staging
 limits treatment comparisons, but it must not block finding an expert, arranging a second opinion,
 or asking how to complete the work-up. Research can proceed with explicit conditional branches;
 do not present an option as applicable until the relevant clinical details are confirmed.
 
 ## What to research, in order
 
-1. **Current protocols / guidelines** for this exact cancer + stage — from the source hierarchy
-   (`../core/source-hierarchy.md`): NCCN, ESMO, ESGO/ESTRO, FIGO, NICE, NCI, plus disease-specific
-   consensus. Capture what the standard pathway is, the decision points, and where approaches
+1. **Current protocols / guidelines** for this exact condition + stage / severity — from the source hierarchy
+   (`../core/source-hierarchy.md`): the specialty society that leads for this condition (for cancer
+   NCCN, ESMO, ESGO/ESTRO, FIGO, NCI; for other conditions e.g. ESC, EAN, EULAR, KDIGO, ERNs), national
+   guidelines such as NICE, plus disease-specific consensus. Capture what the standard pathway is, the decision points, and where approaches
    legitimately differ.
 2. **Where it's best treated** — centres / departments / named clinicians who specialise in **this
-   specific cancer and stage**, including reference/expert centres and second-opinion options; and
+   specific condition and stage / severity**, including reference/expert centres and second-opinion options; and
    **how to reach them** (official contact routes). For access that isn't available locally, hand to
    `../support/eu-crossborder.md` (S2 / cross-border) and the outreach play in `next-action.md`.
 3. **Trials / experimental options**, where relevant (`../support/trials.md`): "worth asking about,"
@@ -59,7 +60,7 @@ service without the person's permission. Stop when more searching no longer chan
 ## Privacy before you put a case into multiple models
 
 The multi-model method means a case gets pasted into several tools — so protect the person before you
-start. **De-identified by default:** work from a short case summary (cancer type, stage, key
+start. **De-identified by default:** work from a short case summary (condition, stage / severity, key
 pathology/biomarkers, prior treatments, the precise question) rather than raw records. Don't upload the
 full set of original reports into every model just because it's easy; most research questions are
 answerable from the summary. **Source PDFs carry metadata** — scans can hold names, dates of birth,
@@ -110,9 +111,9 @@ compare on those — let the person weigh them. For each candidate centre, line 
 
 - **Documented technique / capability** for *this exact* situation (not a general reputation) — confirmed,
   not assumed; route the actual confirmation through the technical-capability audit below.
-- **Disease-specific MDT / tumour board** that regularly handles this cancer and stage.
+- **Disease-specific MDT / tumour board / specialist team** that regularly handles this condition and stage.
 - **Accreditation / reference-network** status (e.g. a recognised reference or comprehensive-cancer
-  designation, or an EU reference network) — as a signal, not a guarantee.
+  designation, a national centre of expertise, or an EU reference network / ERN, essential for rare diseases) — as a signal, not a guarantee.
 - **Published experience** in this specific situation (series, outcomes) — and at what evidence level.
 - **Accepts international / out-of-area patients**, and on what basis.
 - **Timeline** — realistic time to assessment and to treatment, against the person's window.
@@ -137,7 +138,7 @@ enormously. Before relying on a capability, sort the claim:
 - **Unverified** — someone said so, no source yet.
 
 The way to pin this down is a **precise gate question**, not a vague one. Don't ask *"do you do
-[procedure]?"* — ask, generically and cancer-agnostically: *"Do you perform [the exact technique /
+[procedure]?"* — ask, generically and condition-agnostically: *"Do you perform [the exact technique /
 configuration] for [this specific situation], including [the critical component] if indicated, and would
 you accept a patient who has had [a prior phase] elsewhere, within [this window]?"* A centre that can't
 do it self-eliminates fast; one that can gives you something concrete and confirmable. (This mirrors the
@@ -146,7 +147,7 @@ advanced-technique quality gate in `evidence-check.md`.)
 **Route each question to the department that actually owns the answer** — generic examples, names vary
 by country and centre: a radiotherapy/brachytherapy technique → the radiotherapy/radiation-oncology
 department or physics; a drug/regimen → medical oncology; a tissue/biomarker/assay question →
-pathology (`../support/pathology-biomarkers.md`); a radiotracer/theranostic question → nuclear medicine;
+pathology (`../packs/oncology/pathology-biomarkers.md`); a radiotracer/theranostic question → nuclear medicine;
 funding, transfer logistics or representation → the social worker / case manager / patient liaison. A
 reception desk usually can't answer a technique question, and a research office usually can't promise
 clinical care — asking the right door saves weeks.

@@ -1,6 +1,7 @@
 # Oncoskill
 
-**A free, open-source toolkit for cancer patients, for their caregivers, and for anyone organizing
+**A free, open-source toolkit for patients with any serious or complex illness (it started with
+cancer, which remains its deepest pack), for their caregivers, and for anyone organizing
 a loved one's treatment and helping them get through it.** It helps run the operational side:
 understanding documents, preparing for consultations, deciding the next concrete step, organizing
 second opinions and cross-border care, and holding the emotional load.
@@ -10,7 +11,7 @@ second opinions and cross-border care, and holding the emotional load.
 
 It is non-commercial in spirit; anyone may use, fork, and improve it.
 
-> ⚠️ **Status: early release (v0.1.1).** This repository is being built in the open. Structure
+> ⚠️ **Status: early release (v0.2.0).** This repository is being built in the open. Structure
 > and content may change. Nothing here is medical advice.
 
 ## Start here
@@ -28,7 +29,7 @@ Give your assistant this message — it can handle the setup:
 > Затем помоги с моим первым вопросом. Скажи, если не можешь читать файлы или сохранять изменения.
 
 Or download [the Skill archive](downloads/oncoskill.zip?raw=1) / [the single chat document](downloads/oncoskill-chat.md?raw=1).
-You can start without medical documents: “Help me prepare for tomorrow's oncology appointment.”
+You can start without medical documents: “Help me prepare for tomorrow's specialist appointment.”
 [More help with setup](docs/run-as-your-own-agent.md).
 
 ## Your role: trust your team, and verify
@@ -103,7 +104,7 @@ cover both routes. Help with the first real question comes before setting up not
 
 ## Privacy & trust
 
-Cancer documents are highly sensitive. Please read this before uploading anything.
+Medical documents are highly sensitive. Please read this before uploading anything.
 
 - **Use a source you trust.** The installable skill contains no executable code. Your assistant may
   use its existing tools to read documents and research public sources for your request; it must not
@@ -135,7 +136,7 @@ skills/oncoskill/      The installable, self-contained skill (everything below s
     SKILL.md             thin router
     AGENTS.md            install-as-an-agent entry point
     roles/               patient.md, caregiver.md — the two agent personas
-    references/          the modes + core rules + support packs
+    references/          the modes + core rules + support + disease packs (oncology)
     assets/, schemas/    templates, letters, scripts, and the state schemas
     POLICY.md, …         the binding policy + licenses that travel with the skill
 downloads/             Ready-to-use zip and single chat document

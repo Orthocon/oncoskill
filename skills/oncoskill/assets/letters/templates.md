@@ -124,7 +124,7 @@ letter; the short ones can be 3–5 lines.
 - **DICOM / imaging request** — ask for the imaging as **DICOM (raw)**, not only a PDF report, plus the
   report; give the dates/modalities.
 - **Pathology block / slides request** — request the FFPE block and/or a set of unstained slides (and
-  the report); ask about chain-of-custody, how many slides, and return of the original block. (`../../references/support/pathology-biomarkers.md`)
+  the report); ask about chain-of-custody, how many slides, and return of the original block. (`../../references/packs/oncology/pathology-biomarkers.md`)
 - **Medical-summary request** — ask the treating centre for a concise clinical summary / treatment
   record for an external review.
 - **Appointment / meeting-link confirmation** — confirm date, time, modality, and the meeting link **in

@@ -5,11 +5,19 @@ digging. Binding version: `../../POLICY.md` §2 (Evidence). Summary in `../../SK
 
 ## The order (highest first)
 
-Current clinical guidelines / specialty-society consensus (NCCN, ESMO, ESGO, ESTRO, FIGO; ESPEN;
-IPOS/APOS/NCCN-Distress/Macmillan/CancerCare) > systematic reviews / meta-analyses > major-centre
-patient guidance (large cancer centres' own published material) > peer-reviewed primary studies >
+Current clinical guidelines / specialty-society consensus **for the condition in question** >
+systematic reviews / meta-analyses > major-centre patient guidance (large specialist centres' own
+published material) > peer-reviewed primary studies >
 single case reports, conference abstracts, and pre-prints. **Forums, blogs, and social posts are not
 evidence** — they can point you toward a real question, but the answer has to come from a real source.
+
+Which guideline body counts depends on the condition. Examples, not a complete list: cardiology —
+ESC / AHA-ACC; neurology — EAN / AAN; rheumatology — EULAR / ACR; respiratory — ERS / GOLD / GINA;
+kidney — KDIGO / ERA; diabetes and endocrinology — ADA / EASD / ESE; gastroenterology — UEG / ECCO;
+rare diseases — European Reference Networks (ERNs) and Orphanet-listed consensus; oncology — NCCN,
+ESMO, ESGO, ESTRO, FIGO; nutrition — ESPEN; psycho-oncology — IPOS / APOS / NCCN-Distress / Macmillan /
+CancerCare. National guidelines (NICE, AWMF, HAS, AOTMiT and similar) count at the same level. If you
+are not sure which body leads for a condition, say so and check before citing.
 
 Two honesty rules ride along with the order:
 

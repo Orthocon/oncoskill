@@ -9,7 +9,7 @@ medical care.**
   radiologist or pathologist would.
 - **Always discuss your care with your qualified healthcare team.** Any explanation Oncoskill
   gives is a starting point for that conversation, not a decision.
-- Where a radiologist's, pathologist's, or oncologist's report exists, **that report takes
+- Where a radiologist's, pathologist's, or treating specialist's report exists, **that report takes
   priority** over anything Oncoskill says.
 
 ## Red flags — do not wait for an AI
@@ -20,7 +20,7 @@ emergency services immediately**; do not wait for Oncoskill:
 - severe or uncontrolled bleeding;
 - acute chest pain or severe shortness of breath;
 - signs of stroke (face drooping, arm weakness, speech difficulty);
-- **fever during chemotherapy** or suspected neutropenia;
+- **fever during chemotherapy** or while otherwise immunosuppressed;
 - severe, uncontrolled pain;
 - severe dehydration, persistent vomiting, or confusion;
 - a severe allergic reaction.

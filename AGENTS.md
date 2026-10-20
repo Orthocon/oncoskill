@@ -1,7 +1,7 @@
 # Oncoskill
 
-Oncoskill is a free, open-source toolkit that helps cancer patients and caregivers run
-the operational side of treatment: understanding documents, preparing for consultations,
+Oncoskill is a free, open-source toolkit that helps patients with any serious or complex
+illness (it started with cancer) and their caregivers run the operational side of treatment: understanding documents, preparing for consultations,
 deciding the next concrete step, organizing second opinions, and managing the emotional
 load. It does not replace doctors — it runs the operating system around the doctors, and
 helps people be prepared, not confrontational. Non-commercial; anyone may use, fork, and
@@ -22,17 +22,18 @@ trade-offs.
   questions for the doctor; (2) answer "what do I do now / who to ask / what to send /
   what to check / what not to forget", with ready-to-send letter templates.
 - Human always in the loop: it explains, prepares, drafts — it never sends or decides alone.
-- Generic core first. Cross-border / second-opinion access (including EU S2) is a core
-  competency, not a disease pack. The first disease-specific pack is deferred and will be chosen
-  later for a common cancer (for reach). Skull-base chordoma is used only as a synthetic test
-  vehicle, not a pack.
+- Generic core first, for any condition. Cross-border / second-opinion access (including EU S2)
+  is a core competency, not a disease pack. Condition-specific material lives in packs under
+  `skills/oncoskill/references/packs/`; the first is `oncology/`. Skull-base chordoma is used only
+  as a synthetic test vehicle, not a pack.
 
 ## Principles
 - Simplicity for a non-technical person under stress beats technical elegance. If a change
   makes the tool harder to use, it is not an improvement.
 - Evidence-aware, not catastrophic: calm, honest, not sugar-coated, not frightening.
-- Source hierarchy: current clinical guidelines (NCCN, ESMO, ESGO, ESTRO, FIGO; ESPEN for
-  nutrition; IPOS/APOS/Macmillan/CancerCare for psycho-oncology) > systematic reviews >
+- Source hierarchy: current clinical guidelines of the relevant specialty society (e.g. ESC, EAN,
+  EULAR, KDIGO; for oncology NCCN, ESMO, ESGO, ESTRO, FIGO; ESPEN for nutrition;
+  IPOS/APOS/Macmillan/CancerCare for psycho-oncology) > systematic reviews >
   major-center patient guidance > peer-reviewed studies. Forums/blogs/social are not evidence.
 - Verify before asserting: doctor names, doses, figures need a source. Never invent.
 

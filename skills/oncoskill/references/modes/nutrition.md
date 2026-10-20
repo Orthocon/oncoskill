@@ -6,6 +6,12 @@ common symptoms, and turn real concerns into questions for the team or dietitian
 prescribe a therapeutic diet or compute portions for an individual. (Voice: `../core/tone.md`.
 Boundaries: `../../POLICY.md`.)
 
+The claim-checking method below works for any condition. Most worked examples are from cancer
+treatment (neutropenia, chemo days); apply those food-safety rules **only** when the person is actually
+immunosuppressed. Other conditions have their own diet rules set by the team (e.g. fluid or potassium
+limits in kidney or heart disease, gluten in coeliac disease, interactions with warfarin) — ask what the
+team has told them rather than borrowing oncology rules.
+
 *Example-level guidance, not rules for your case — adapt to the person's region and situation; their care team's instructions win (full principle: `../core/adapt-to-context.md`).*
 
 ## Posture
@@ -153,7 +159,7 @@ don't just scold. Keep the person's own situation central.
 ## Hand-offs
 
 - A real symptom mid-treatment, a fever, dehydration, or something not settling → that's not just a food
-  question; see `on-treatment.md` for the active-treatment loop, and route any red flag (severe
+  question; see `../packs/oncology/on-treatment.md` for the active-treatment loop, and route any red flag (severe
   dehydration, can't keep fluids down, fever during/after chemo) per `../../POLICY.md`.
 - A supplement/drug interaction question → flag to **pharmacist/team**; deeper detail on medicines is in
   `medications.md`.

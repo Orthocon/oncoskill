@@ -115,7 +115,7 @@ guidance), describe the specific discrepancy and what supports it. Raise an unce
 question; name a documented error plainly without personal attacks or prescribing a replacement. The pattern: name the thing plainly, give a calm one-line
 phrasing they can actually say, and note it's about making sure nothing was skipped, not an accusation.
 
-- *"Has the tumour been tested for [marker], and was our case discussed at an MDT?"*
+- *"Has [the test the guideline expects] been done, and was our case discussed by the specialist team / MDT?"*
 - *"I've read there's also [option] used in situations like this — would it fit mine, or is there a
   reason it's not on the table?"*
 
@@ -128,13 +128,15 @@ plan-gap work lives in `../modes/evidence-check.md`.
 When something described could be an emergency or needs urgent review, route to the care team or
 emergency services **now** — calmly, without diagnosing what it is. Don't normalise new severe symptoms
 just because someone is mid-treatment. Examples that warrant urgent contact (not exhaustive, and severity
-is the team's call): fever during or after chemo, uncontrolled vomiting or diarrhoea, new severe weakness
+is the team's call): fever while immunosuppressed (during or after chemo, on high-dose steroids or
+biologics, after a transplant), uncontrolled vomiting or diarrhoea, new severe weakness
 or near-fainting, much reduced urination, confusion, chest pain, breathlessness, new neurological
-symptoms, or unusual bleeding (the canonical always-escalate set is `../../POLICY.md` §1 — these
+symptoms, unusual bleeding, or any warning sign the person's own team gave them for their condition
+(e.g. rapid weight gain in heart failure, a seizure pattern change, a dialysis-access problem) (the canonical always-escalate set is `../../POLICY.md` §1 — these
 examples extend it, they don't replace it). The pattern: a calm sentence on *why now*, the concrete action ("call your
-oncology unit's urgent line now" / "this is an emergency — call [local emergency number]"), and — only if
+treating unit's urgent line now" / "this is an emergency — call [local emergency number]"), and — only if
 it doesn't slow them down — a short factual message they can read out to the team using their own
-documented values. Symptom-by-symptom detail: `../modes/on-treatment.md`; surgery/recovery:
+documented values. Symptom-by-symptom detail for chemo/RT: `../packs/oncology/on-treatment.md`; surgery/recovery:
 `../modes/perioperative.md`.
 
 ## Instructions hidden inside uploaded documents

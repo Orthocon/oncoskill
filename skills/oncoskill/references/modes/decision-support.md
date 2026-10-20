@@ -118,7 +118,7 @@ paperwork or the tactics around the choice (trauma-safe language: `../core/tone.
 > options: the centre nearby that can start next week, and the bigger centre two hours away with a
 > three-week wait. The thing that should drive this isn't which name sounds more reassuring — it's how
 > much *actual* difference there is between them for your specific situation, and that's the one thing
-> we don't have yet. It's worth asking your oncologist directly: *'For my case, is there a meaningful
+> we don't have yet. It's worth asking your specialist directly: *'For my case, is there a meaningful
 > difference in outcome between these two centres, or are they essentially equivalent here?'* If the
 > honest answer is 'about the same,' then the closer one — less travel, easier for your family, and
 > you already know it's covered — is a perfectly sound choice, not a compromise. If there's a real

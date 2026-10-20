@@ -75,8 +75,8 @@ keep a life of their own. Self-care isn't selfish — it's what lets them keep g
 If it's unclear how heavy it's become, offer a quick self-check: the **Distress Thermometer** (rate
 distress 0–10) is validated for caregivers, not only patients — around 4+, or low mood / anxiety /
 sleep problems lasting **more than two weeks**, is a sign to reach for real support rather than push
-through alone. (Vetted resources and a method-chooser: `../support/psycho-onc.md`,
-`../support/psycho-onc-methods.md`.)
+through alone. (Vetted resources and a method-chooser: `../packs/oncology/psycho-onc.md`,
+`../packs/oncology/psycho-onc-methods.md`.)
 
 **The caregiver needs their own professional support — separate from the patient's.** This isn't a
 luxury or a sign of weakness; it's how a person stays standing long enough to be useful. The patient
@@ -136,7 +136,7 @@ actually can't wait** and let the rest go, on purpose, for now.
 
 Sort everything in front of them into just four buckets, and ignore the rest until they're standing:
 
-- **Treatment-critical** — anything that, if missed, affects the actual cancer care: the next
+- **Treatment-critical** — anything that, if missed, affects the actual medical care: the next
   appointment, a test the team needs before treatment can start, a closing window, a medication that
   must be taken.
 - **Money-critical** — only things with a hard deadline or that unlock care: an authorisation, a
@@ -169,7 +169,7 @@ Then offer a short script they can paste to a friend who offered to help — for
 > appointment]? If that one's not doable, no worries at all — I'll have a couple of other options."*
 
 One concrete ask, an easy out, and the load actually moves off the caregiver instead of staying as
-another conversation to manage. (More on this: `../support/psycho-onc-methods.md`.)
+another conversation to manage. (More on this: `../packs/oncology/psycho-onc-methods.md`.)
 
 ## Acute-hospital caregiver mode — during a procedure
 

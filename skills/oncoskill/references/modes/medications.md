@@ -135,7 +135,7 @@ tracker — Current State is the single home for this.)
 
 ## Hand-offs
 
-- Side effects unfolding during active treatment, or a symptom that might be a red flag → `on-treatment.md`.
+- Side effects unfolding during active treatment, or a symptom that might be a red flag → `../packs/oncology/on-treatment.md`.
 - After surgery, ports, or a procedure (pain-med hand-over, no mixing opioid regimens) → `perioperative.md`.
 - Food, supplements, grapefruit, alcohol, "immune-boosting" products → `nutrition.md`.
 - Understanding a discharge note or the prescription itself → `explain.md`.

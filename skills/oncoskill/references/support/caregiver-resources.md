@@ -62,6 +62,18 @@ Full audit + dates: the project repo source ledger (not bundled), `caregiver_sup
   `https://www.cancersupportcommunity.org/caregivers`
 - (Russian-language options live in `ru-resources.md`.)
 
+Most items on this page come from cancer organisations; the caregiving advice itself applies to any
+illness. For other conditions, start with the condition's own patient organisation and these general
+carer and rare-disease bodies *(verify-link before sharing)*:
+
+- **Family Caregiver Alliance** (US) — general caregiving guides. `https://www.caregiver.org/`
+- **Carers UK** — rights, money and practical help for unpaid carers. `https://www.carersuk.org/`
+- **Eurocarers** — European network of carers' organisations, country members. `https://eurocarers.org/`
+- **EURORDIS** — rare-disease patient alliance; links to national rare-disease organisations.
+  `https://www.eurordis.org/`
+- **Orphanet** — rare-disease information, expert centres, patient organisations by country.
+  `https://www.orpha.net/`
+
 ## Books (for those who want depth)
 
 - *American Cancer Society Complete Guide to Family Caregiving* — problem-by-problem checklists.
